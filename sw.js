@@ -463,10 +463,7 @@ precacheAndRoute([
 		revision: "c52ef00158bcdae5dbaf969a78f5eeac",
 		url: "assets/images/danoitech/favicon.ico"
 	},
-	{
-		revision: "e8e95806b1092ad5b16def01059b24b5",
-		url: "assets/images/danoitech/logo1.png"
-	},
+
 	{
 		revision: "0bc4e0177dd7ea19fdca9d068ff0709b",
 		url: "assets/images/danoitech/manifest.json"
