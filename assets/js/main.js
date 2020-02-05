@@ -1,6 +1,8 @@
 document.cookie = 'same-site-cookie=foo; SameSite=Lax';
 document.cookie = 'cross-site-cookie=bar; SameSite=None; Secure';
-
+$(function() {
+	"use strict";
+	
 	$(window).on("scroll", function(event) {
 		var scroll = $(window).scrollTop();
 		if (scroll < 250) {
