@@ -789,7 +789,7 @@ registerRoute(
 	})
 );
 registerRoute(
-	/\.(?:css|js|html|htm|xml)$/,
+	/\.(?:css|js|html|php|xml)$/,
 	new CacheFirst({
 		cacheName: "assets-cache",
 		plugins: [
@@ -811,7 +811,7 @@ const postHandler = new CacheFirst({
 	]
 });
 
-registerRoute(new RegExp("/.*"), args => {
+registerRoute(new RegExp("/(.*).html"), args => {
 	return postHandler
 		.handle(args)
 		.then(response => {
