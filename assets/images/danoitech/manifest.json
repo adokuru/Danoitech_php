@@ -1,0 +1,62 @@
+{
+ "name": "DanoiTech",
+  "short_name": "DanoiTech",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#b21117",
+  "theme_color": "#b21117",
+  "orientation": "portrait-primary",
+ "icons": [
+  {
+   "src": "32.png",
+   "sizes": "36x36",
+   "type": "image/png"
+  },
+  {
+   "src": "152.png",
+   "sizes": "152x152",
+   "type": "image/png"
+   
+  },
+  {
+   "src": "128.png",
+   "sizes": "128x128",
+   "type": "image/png"
+   
+  },
+  {
+   "src": "apple-touch-icon-72x72.png",
+   "sizes": "72x72",
+   "type": "image/png"
+   
+  },
+  {
+   "src": "android-chrome-96x96.png",
+   "sizes": "96x96",
+   "type": "image/png"
+   
+  },
+  {
+   "src": "144.png",
+   "sizes": "144x144",
+   "type": "image/png"
+   
+  },
+  {
+   "src": "256.png",
+   "sizes": "384x384",
+   "type": "image/png"
+   
+  },
+  {
+   "src": "196.png",
+   "sizes": "192x192",
+   "type": "image/png"
+  },
+  {
+   "src": "512.png",
+   "sizes": "512x512",
+   "type": "image/png"
+  }
+ ]
+}

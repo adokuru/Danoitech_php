@@ -1,0 +1,251 @@
+    <!--====== REQUEST QUOTE PART START ======-->
+
+    <section class="requst-quote-area bg_cover pt-115" style="background-image: url(assets/images/requst-quote-bg.jpg);">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="requst-content text-center">
+                        <span>Get A Quote</span>
+                        <h2 class="title">Free Consultations</h2>
+                        <a class="main-btn-2 main-btn" href="/#quotemain">Request A Quote</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="newaletter-area">
+        <div class="container">
+            <div class="row no-gutters">
+                <div class="col-lg-12">
+                    <form method="POST" onsubmit="return subscribednw(this);">
+                        <div class="newaletter-item d-sm-flex d-block">
+                            <div class="newaletter-content d-flex align-items-center">
+                                <div class="item pl-70">
+                                    <span>Newsletter</span>
+                                    <h4 class="title">Subscribe</h4>
+                                </div>
+                            </div>
+                            <div class="newaletter-input d-sm-flex d-block justify-content-center align-items-center">
+                                <input type="email" name="EmailName" placeholder="Enter your email">
+                                <button type="submit" class="main-btn">Subscribe</button>
+                            </div>
+                        </div>
+                    </form>
+                    <script type="text/javascript">
+                         function subscribednw(form) {
+                                $.ajax({
+                                    url: "https://danoitech.herokuapp.com/subscribed",
+                                    method:"POST",
+                                    data: {EmailName: form.EmailName.value},
+                                     success: function(response){
+                                        swal(response);
+                                     }
+                                })
+                                return false;
+                            }
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--====== REQUEST QUOTE PART ENDS ======-->
+
+    <!--====== BRAND PART START ======-->
+
+    <div class="brand-area pb-130">
+        <div class="container">
+            <div class="row brand-active">
+                <div class="col-lg-2">
+                    <div class="brand-item text-center">
+                        <img src="assets/images/barand-1.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="brand-item text-center">
+                        <img src="assets/images/barand-2.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="brand-item text-center">
+                        <img src="assets/images/barand-3.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="brand-item text-center">
+                        <img src="assets/images/barand-4.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="brand-item text-center">
+                        <img src="assets/images/barand-5.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="brand-item text-center">
+                        <img src="assets/images/barand-6.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="brand-item text-center">
+                        <img src="assets/images/barand-2.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--====== BRAND PART ENDS ======-->
+
+    <!--====== FOOTER PART START ======-->
+
+    <footer class="footer-area pt-80">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="footer-logo text-center pb-45">
+                        <a href="/"><img src="assets/images/footer-logo.png" alt="footer-logo"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-widget mt-30">
+                        <div class="footer-title">
+                            <h4 class="title">About Company</h4>
+                        </div>
+                        <div class="footer-items-1">
+                            <p>Headquartered in Abuja, Nigeria with a second location in Ikeja, lagos, DanoiTech  is a Professional Software Development & IT Consulting Firm.</p>
+                            <ul>
+                                <li><a href="https://www.facebook.com/danoitech"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="https://www.twitter.com/danoitech"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="https://www.instagram.com/danoi_tech"><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="https://wa.me/2348055636587?text=Hello%20I%27m%20interested%20in%20one%20of%20your%20services"><i class="fab fa-whatsapp"></i></a></li>
+                                <li><a href="mailto:info@danoitech.com"><i class="fas fa-envelope"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-widget ml-30 mt-30">
+                        <div class="footer-title">
+                            <h4 class="title">Quick Links</h4>
+                        </div>
+                        <div class="footer-items-2 d-flex">
+                            <ul>
+                                <li><a href="/about">About DanoiTech</a></li>
+                                <li><a href="/services">Need A Solution ?</a></li>
+                            </ul>
+                            <ul class="ml-40">
+                                <li><a href="https://medium.com/@danoitech">Our Blog</a></li>
+                                <li><a href="/contact">Contact us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-8">
+                    <div class="footer-widget ml-10 mt-30">
+                        <div class="footer-title">
+                            <h4 class="title">Recent Tweets</h4>
+                        </div>
+                        <div class="footer-items-3">
+                            <div class="News-item d-flex">
+                                <a class="twitter-timeline" data-lang="en" data-width="312" data-height="200" data-theme="dark" href="https://twitter.com/danoitech?ref_src=twsrc%5Etfw"data-chrome="noheader nofooter noscrollbar noborders transparent">Tweets by danoitech</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                              
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="footer-copyright">
+                        <span><i class="fal fa-phone-office"></i> + 234 (805) 5636587</span>
+                        <p>Copyright ©2020. All Rights Reserved</p>
+                    </div>
+                    <div class="back-top">
+                        <a href="#" class="back-to-top">
+                            <i class="fa fa-angle-up"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<div class="modal"><!-- Place at bottom of page --></div>
+
+
+    <!--====== FOOTER PART ENDS ======-->
+
+    <!--====== jquery js ======-->
+    <script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
+    <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
+
+
+    <!--====== Bootstrap js ======-->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+
+    <!--====== Slick js ======-->
+    <script src="assets/js/slick.min.js"></script>
+
+    <!--====== counterup js ======-->
+    <script src="assets/js/jquery.counterup.min.js"></script>
+
+    <!--====== nice select js ======-->
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+
+    <!--====== waypoints js ======-->
+    <script src="assets/js/waypoints.min.js"></script>
+
+    <!--====== rangeSlider js ======-->
+    <script src="assets/js/ion.rangeSlider.min.js"></script>
+
+    <!--====== wow js ======-->
+    <script src="assets/js/wow.min.js"></script>
+
+
+    <!--====== Magnific Popup js ======-->
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+
+    <!--====== sweetalert  js ======-->
+    <script src="assets/js/sweetalert.min.js"></script>
+ 
+
+
+    <!--====== Ajax Contact js ======-->
+    <script src="assets/js/ajax-contact.js"></script>
+
+    <!--====== Main js ======-->
+    <script src="assets/js/main.js"></script>
+
+       
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+          $("#securelock").hover(function(){
+            $("#securelocked").toggleClass("fa-lock-alt",true);
+            $("#securelocked").toggleClass("fa-lock-open-alt",false);
+            });
+        });
+        $(document).ready(function(){
+          $("#ssss").hover(function(){
+            $("#securelocked").toggleClass("fa-lock-alt",false);
+            $("#securelocked").toggleClass("fa-lock-open-alt",true);
+            });
+        });
+        $body = $("body");
+
+        $(document).on({
+            ajaxStart: function() { $body.addClass("loading");    },
+             ajaxStop: function() { $body.removeClass("loading"); }    
+        });
+        
+    </script>
+
+
+</body>
+
+
+</html>

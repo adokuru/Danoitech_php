@@ -1,0 +1,42 @@
+{
+	"name": "DanoiTech",
+	"short_name": "DanoiTech",
+	"start_url": "/",
+	"display": "standalone",
+	"background_color": "#b21117",
+	"theme_color": "#b21117",
+	"orientation": "portrait-primary",
+	"icons": [
+		 {
+	      "src": "/images/icons-192.png",
+	      "type": "image/png",
+	      "sizes": "192x192"
+	    },
+	    {
+	      "src": "/images/icons-512.png",
+	      "type": "image/png",
+	      "sizes": "512x512"
+	    },
+	    {
+	      "src": "/images/icons-512.png",
+	      "type": "image/png",
+	      "sizes": "512x512"
+	    },
+	    {
+	      "src": "/images/icons-512.png",
+	      "type": "image/png",
+	      "sizes": "512x512"
+	    },
+	    {
+	      "src": "/images/icons-512.png",
+	      "type": "image/png",
+	      "sizes": "512x512"
+	    },
+	    {
+	      "src": "/images/icons-512.png",
+	      "type": "image/png",
+	      "sizes": "512x512"
+	    }
+	]
+
+}

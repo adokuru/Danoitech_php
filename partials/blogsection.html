@@ -1,0 +1,42 @@
+ <!--====== BLOG PART START ======-->
+ <% if (posts) { %>
+      
+
+
+                     
+    <section class="blog-area">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="section-title text-center">
+                        <h2 class="title">Latest Post <span>Popular <span> News & Blog</span></span></h2>
+                        <p>knows About Latest News & Blog</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                
+               
+                    <%  posts.forEach(function(post){ %>
+
+                <div class="col-lg-4 col-md-6 col-sm-8">
+                    <div class="blog-item mt-30 wow fadeIn animated" data-wow-duration="1500ms" data-wow-delay="0ms">
+                        <div class="blog-content">
+                            <h3 class="title"><a href="<%=post.link%>"><%=post.title%></a></h3>
+                            <ul>
+                                <li><i class="fal fa-user"></i> DanoiTech</li>
+                                <li><i class="fal fa-calendar-alt"></i><%=post.published%></li>
+                            </ul>
+                            <a href="<%=post.link%>">View Details <i class="fal fa-long-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                 <% }) %>
+                
+            </div>
+              
+        </div>
+    </section>
+
+  <% } %>
+    <!--====== BLOG PART ENDS ======-->
