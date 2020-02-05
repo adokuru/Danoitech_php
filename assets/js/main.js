@@ -4,8 +4,8 @@ $(function() {
 	"use strict";
 	$(window).on("load", function(event) {
 		$("# preloader")
-			.delay(500)
-			.fadeOut(500);
+			.delay(200)
+			.fadeOut(200);
 	});
 	$(window).on("scroll", function(event) {
 		var scroll = $(window).scrollTop();
