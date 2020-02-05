@@ -168,10 +168,6 @@ precacheAndRoute([
 		url: "assets/images/banner-1.jpg"
 	},
 	{
-		revision: "4f82553766c1e3354ba4caa36b272831",
-		url: "assets/images/banner-2.1.jpg"
-	},
-	{
 		revision: "e957efd8d733b9a1fbc320c59ba8f5fe",
 		url: "assets/images/banner-3-min-1-e1571829912259.jpg"
 	},
@@ -557,10 +553,7 @@ precacheAndRoute([
 		revision: "7e44323ccec1f8e193f2391a76b89909",
 		url: "assets/images/logo.png"
 	},
-	{
-		revision: "d393c23b87cba91edd185b1de82a531f",
-		url: "assets/images/logo1.png"
-	},
+
 	{
 		revision: "c13f90674d0658022262f74535aa4894",
 		url: "assets/images/mission-item.png"
