@@ -801,16 +801,15 @@ const postHandler = new CacheFirst({
 	]
 });
 
-registerRoute(new RegExp("/(.*).html"), args => {
-	return postHandler
-		.handle(args)
-		.then(response => {
-			if (response.status === 404) {
-				return caches.match("/404.html");
-			}
-			return response;
-		})
-		.catch(function() {
-			return caches.match("/offline.html");
-		});
-});
+registerRoute(/(.*)\.html/, args => {
+	return postHandler.handle(args).then(response => {
+      if (response.status === 404) {
+        return caches.match('404.html');
+      }
+      return response;
+    })
+    .catch(function() {
+      return caches.match('offline.html');
+    });
+  });
+
