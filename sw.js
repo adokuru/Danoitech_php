@@ -544,10 +544,6 @@ precacheAndRoute([
 		url: "assets/images/footer-logo.png"
 	},
 	{
-		revision: "08d7a6e7f79be7dad98c74fd6a357560",
-		url: "assets/images/footer-logo1.png"
-	},
-	{
 		revision: "3d164060b73500c03d9d5defccea081e",
 		url: "assets/images/goals-bg.jpg"
 	},
@@ -559,10 +555,7 @@ precacheAndRoute([
 		revision: "9525e822da16fc82c86631923083947c",
 		url: "assets/images/history-1.jpg"
 	},
-	{
-		revision: "c7e38a410c308918080ac8b97d750a23",
-		url: "assets/images/logo-2.png"
-	},
+
 	{
 		revision: "7e44323ccec1f8e193f2391a76b89909",
 		url: "assets/images/logo.png"
