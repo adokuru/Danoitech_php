@@ -1,12 +1,6 @@
 document.cookie = 'same-site-cookie=foo; SameSite=Lax';
 document.cookie = 'cross-site-cookie=bar; SameSite=None; Secure';
-$(function() {
-	"use strict";
-	$(window).on("load", function(event) {
-		$("# preloader")
-			.delay(200)
-			.fadeOut(200);
-	});
+
 	$(window).on("scroll", function(event) {
 		var scroll = $(window).scrollTop();
 		if (scroll < 250) {

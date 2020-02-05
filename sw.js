@@ -756,7 +756,6 @@ precacheAndRoute([
 	},
 	{ revision: "eee166c41188672a287c10b63b0f3bd9", url: "manifest.json" },
 	{ revision: "e05729c32a03ce9b75ebc64e1d12043f", url: "robots.txt" },
-	{ revision: "2551d0e3a164d87b562acf4a8efcc8d4", url: "sw.ts.js" }
 ]);
 
 registerRoute(
