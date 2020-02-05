@@ -4,13 +4,9 @@
 #Require valid-user
 
 RewriteEngine on
-
-
-# If a directory or a file exists, use it directly
-RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-# Otherwise forward it to index.html
-RewriteRule . index.html
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.*)$ $1.html
 
 
 <IfModule mod_deflate.c>
