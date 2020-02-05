@@ -1,7 +1,9 @@
+document.cookie = 'same-site-cookie=foo; SameSite=Lax';
+document.cookie = 'cross-site-cookie=bar; SameSite=None; Secure';
 $(function() {
 	"use strict";
 	$(window).on("load", function(event) {
-		$("#preloader")
+		$("# preloader")
 			.delay(500)
 			.fadeOut(500);
 	});
