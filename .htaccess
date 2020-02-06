@@ -28,6 +28,7 @@ RewriteRule ^ %{REQUEST_URI}.html [NC,L]
   AddOutputFilterByType DEFLATE text/javascript
   AddOutputFilterByType DEFLATE text/plain
   AddOutputFilterByType DEFLATE text/xml
+  AddOutputFilterByType DEFLATE text/json
 </IfModule>
 
 AddType image/x-icon .ico
@@ -51,6 +52,7 @@ AddType image/x-icon .ico
   # CSS, JavaScript
   ExpiresByType text/css "access plus 1 month"
   ExpiresByType text/javascript "access plus 1 month"
+  ExpiresByType text/json "access plus 1 month"
   ExpiresByType application/javascript "access plus 1 month"
 
   # Others

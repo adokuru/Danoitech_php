@@ -31,3 +31,17 @@ body.loading .modal {
   border: 1px solid #3e549a;
   text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.3);
 }
+.captcha {
+  position: relative;
+}
+.captcha-fake-field {
+  background: transparent;
+  bottom: 0;
+  border: none;
+  display: block;
+  height: 1px;
+  left: 12px;
+  width: 1px;
+  position: absolute;
+  z-index: -1;
+}

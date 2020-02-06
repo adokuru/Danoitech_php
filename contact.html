@@ -190,8 +190,8 @@
                                 <div class="contact-info-item text-center">
                                     <i class="fal fa-map-marked-alt"></i>
                                     <ul>
-                                        <li>27 Division St, New York, </li>
-                                        <li>NY 10002,USA </li>
+                                        <li>11 Kaptial St, Area 11, </li>
+                                        <li>Abuja 900110,NG</li>
                                     </ul>
                                 </div>
                             </div>
@@ -199,8 +199,8 @@
                                 <div class="contact-info-item text-center active">
                                     <i class="fal fa-envelope"></i>
                                     <ul>
-                                        <li><a href="https://webtend.biz/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="b5c6c0c5c5dac7c1f5d2d8d4dcd99bd6dad8">[email&#160;protected]</a></li>
-                                        <li>www.itservicesinfo.net</li>
+                                        
+                                        <li>info@danoitech.com</li>
                                     </ul>
                                     <img class="item-1" src="assets/images/contact-shape-1.png" alt="shape">
                                     <img class="item-2" src="assets/images/contact-shape-2.png" alt="shape">
@@ -210,8 +210,8 @@
                                 <div class="contact-info-item text-center">
                                     <i class="fal fa-phone"></i>
                                     <ul>
-                                        <li>+08 (964) 712365</li>
-                                        <li>+0234 (456) 9864</li>
+                                        <li>+234(0)80 5563 6587</li>
+                                        <li>+234(0)80 3324 0654</li>
                                     </ul>
                                 </div>
                             </div>
@@ -234,7 +234,7 @@
                             <h3 class="title">Send A Message</h3>
                             <p>Avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter</p>
                         </div>
-                        <form id="contact-form" action="/qoute" method="post">
+                        <form id="contact-form" onsubmit="return subquotemain(this);" method="post">
                             <div class="row">
                                 <div class="col-lg-6">
                                     <div class="input-box mt-20">
@@ -250,7 +250,7 @@
                                 </div>
                                 <div class="col-lg-12">
                                     <div class="input-box mt-20">
-                                        <input name="subject" type="text" placeholder="Your Email ">
+                                        <input name="subject" type="text" placeholder="I’m Talking About">
                                         <i class="fal fa-file"></i>
                                     </div>
                                 </div>
@@ -263,6 +263,20 @@
                                 </div>
                             </div>
                         </form>
+                       <script type="text/javascript">
+                            function subquotemain(form) {
+                                $.ajax({
+                                    url: "https://danoitech.herokuapp.com/quote",
+                                    method:"POST",
+                                    data: {femail: form.femail.value,fname: form.fname.value,subject: form.subject.value,message: form.message.value },
+                                     success: function(response){
+                                        swal(response);
+                                     }
+                                })
+                                return false;
+                            }
+                           
+                        </script>
                         <p class="form-message"></p>
                     </div>
                 </div>

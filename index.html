@@ -491,33 +491,53 @@
                     </div>
                 </div>
                 <div class="col-lg-5">
+                	<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+				        async defer>
+				    </script>
+
                     <div class="quote-content">
                         <h3 class="title">Get A Quote <br> <span>Free <span>Consultations</span></span></h3>
                         <form onsubmit="return subquotemain(this);" method="POST">
                             <div class="input-box mt-25">
                                 <label for="#">Full Name Here</label>
-                                <input type="text" name="fname" placeholder="Ayodeji Haruna Chigozie">
+                                <input type="text" name="fname" placeholder="Ayodeji Haruna Chigozie" required="Full Name Required">
                                 <i class="fal fa-user"></i>
                             </div>
                             <div class="input-box mt-25">
                                 <label for="#">Email</label>
-                                <input type="email" name="femail" placeholder="xxxxx@gmail.com">
+                                <input type="email" name="femail" placeholder="xxxxx@gmail.com" required="Email Required">
                                 <i class="fal fa-envelope"></i>
                             </div>
                             <div class="input-box mt-25">
                                 <label for="#">I Would Like To Discuss</label>
-                                <input type="text" name="subject" placeholder="I’m Talking About">
+                                <input type="text" name="subject" placeholder="I’m Talking About" required="Subject Required">
                                 <i class="fal fa-file"></i>
                             </div>
+                       
                             <div class="input-box mt-25">
                                 <label for="#">Leave A Message</label>
-                                <textarea cols="30" name="message" rows="10" placeholder="Write Message"></textarea>
+                                <textarea cols="30" name="message" rows="10" placeholder="Write Message" required="Message Required"></textarea>
                                 <i class="fal fa-pen-alt"></i>
-                            </div>
+                            </div> 
+                            <div class="captcha">
+                            	<div id="recaptcha" data-callback="removeFakeCaptcha"></div>
+							   <input type="checkbox" class="captcha-fake-field" tabindex="-1" required>
+							</div>
                             <div class="submit-btn text-right mt-20">
-                                <button type="submit" class="main-btn">Send Mesage</button>
+                                <button type="submit" value="submit" class="main-btn">Send Mesage</button>
                             </div>
                         </form>
+                         <script type="text/javascript">
+
+					      var onloadCallback = function() {
+					        grecaptcha.render('recaptcha', {
+					          'sitekey' : '6LeZQNYUAAAAAPgoQD3hQqbfovdZj4lPzBdfgqre'
+					        });
+					      };
+					      window.removeFakeCaptcha = function() {
+							document.querySelector('.captcha-fake-field').remove();
+						   }
+					    </script>
                         <script type="text/javascript">
                             function subquotemain(form) {
                                 $.ajax({
