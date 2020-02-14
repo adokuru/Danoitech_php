@@ -1,4 +1,7 @@
 RewriteEngine on
+RewriteCond %{HTTP_HOST} ^danoitech\.com.ng$ [NC]
+RewriteRule ^(.*)$ https://www.danoitech.com/$1 [R=301,L]
+RewriteCond $1 !^(assets|images|js|css|uploads|favicon.png|favicon.ico|sw.js|sitemap.xml|OneSignalSDKUpdaterWorker.js|OneSignalSDKWorker.js|robots.txt)
 RewriteCond %{THE_REQUEST} /([^.]+)\.html [NC]
 RewriteRule ^ /%1 [NC,L,R]
 RewriteCond %{REQUEST_FILENAME}.html -f
