@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+<link href="images/favicon.png" rel="icon" />
+<title>Chargepay - Recharge & Bill Payment, Booking HTML5 Template</title>
+<meta name="description" content="Chargepay - Recharge & Bill Payment Gateway">
+<meta name="author" content="danoitech.com">
+
+<!-- Web Fonts
+============================================= -->
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900' type='text/css'>
+
+<!-- Stylesheet
+============================================= -->
+<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="vendor/font-awesome/css/all.min.css" />
+<script src="https://kit.fontawesome.com/3221a4a972.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="vendor/owl.carousel/assets/owl.carousel.min.css" />
+<link rel="stylesheet" type="text/css" href="vendor/owl.carousel/assets/owl.theme.default.min.css" />
+<link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
+</head>
+<body>
+<!-- Preloader -->
+<div id="preloader"><div data-loader="dual-ring"></div></div><!-- Preloader End -->
+
+<!-- Document Wrapper   
+============================================= -->
+<div id="main-wrapper"> 
+  
+  <!-- Header
+  ============================================= -->
+  <header id="header" class="bg-transparent header-text-light header-border">
+    <div class="container">
+      <div class="header-row">
+        <div class="header-column justify-content-start"> 
+          
+          <!-- Logo
+          ============================================= -->
+          <div class="logo"> <a href="index.html" title="Chargepay"><img src="images/logo-light.png" alt="Quickai" width="127" height="29" /></a> </div>
+          <!-- Logo end --> 
+          
+        </div>
+        <div class="header-column justify-content-end"> 
+          
+          <!-- Primary Navigation
+          ============================================= -->
+          <nav class="primary-menu navbar navbar-expand-lg">
+            <div id="header-nav" class="collapse navbar-collapse">
+              <ul class="navbar-nav">
+                <li class="dropdown active"> <a class="dropdown-toggle" href="/">Home</a>
+                </li>
+                <li class="dropdown active"><a class="dropdown-toggle" href="#">Buy Airtime</a>
+                </li>
+                <li class="dropdown active"><a class="dropdown-toggle" href="#">Pay Bills</a>
+                </li>
+                
+                <li class="login-signup ml-lg-2"><a class="pl-lg-4 pr-0" data-toggle="modal" data-target="#login-signup" href="#" title="Login / Sign up">Login / Sign up <span class="d-none d-lg-inline-block"><i class="fas fa-user"></i></span></a></li>
+              </ul>
+            </div>
+          </nav>
+          <!-- Primary Navigation end --> 
+        </div>
+        
+        <!-- Collapse Button
+        ============================================= -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#header-nav"> <span></span> <span></span> <span></span> </button>
+      </div>
+    </div>
+  </header>
+  <!-- Header end --> 
+  
+  <!-- Content
+  ============================================= -->
+  <div id="content">
+    <div class="hero-wrap py-2 py-md-3 py-lg-4">
+      <div class="hero-mask opacity-3 bg-dark"></div>
+      <div class="hero-bg" style="background-image:url('./images/bg/image-1.jpg');"></div>
+      <div class="hero-content py-3 py-lg-5 my-3 my-md-5">
+        <div class="container">
+          <!-- Tabs -->
+          <ul class="nav nav-tabs style-2" id="myTab" role="tablist">
+            <li class="nav-item"> <a class="nav-link active" id="first-tab" data-toggle="tab" href="#first" role="tab" aria-controls="first" aria-selected="true">Airtime Recharge </a> </li>
+            <li class="nav-item"> <a class="nav-link" id="second-tab" data-toggle="tab" href="#second" role="tab" aria-controls="second" aria-selected="false">Data Recharge</a> </li>
+            <li class="nav-item"> <a class="nav-link" id="third-tab" data-toggle="tab" href="#seventh" role="tab" aria-controls="seventh" aria-selected="false">Electricity</a> </li>
+          </ul>
+          <div class="tab-content bg-light shadow-md rounded rounded-top-0 px-4 pt-4 pb-2" id="myTabContent">
+            <div class="tab-pane fade show active" id="first" role="tabpanel" aria-labelledby="first-tab">
+              <form id="recharge-bill" method="post">
+                <div class="mb-3">
+                  <div class="custom-control custom-radio custom-control-inline">
+                    <input id="prepaid" name="rechargeBillpayment" class="custom-control-input" checked="" required type="radio">
+                    <label class="custom-control-label" for="prepaid">Prepaid</label>
+                  </div>
+                  <div class="custom-control custom-radio custom-control-inline">
+                    <input id="postpaid" name="rechargeBillpayment" class="custom-control-input" required type="radio">
+                    <label class="custom-control-label" for="postpaid">Postpaid</label>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="col-md-6 col-lg-4 form-group">
+                    <input type="text" class="form-control" data-bv-field="number" id="mobileNumber" required placeholder="Enter Mobile Number">
+                  </div>
+                  <div class="col-md-6 col-lg-3 form-group">
+                    <select class="custom-select" required="">
+                      <option value="">Select Your Operator</option>
+                      <option>1st Operator</option>
+                      <option>2nd Operator</option>
+                      <option>3rd Operator</option>
+                      <option>4th Operator</option>
+                      <option>5th Operator</option>
+                      <option>6th Operator</option>
+                      <option>7th Operator</option>
+                    </select>
+                  </div>
+                  <div class="col-md-6 col-lg-3 form-group"> <a href="#" data-target="#view-plans" data-toggle="modal" class="view-plans-link">View Plans</a>
+                    <input class="form-control" id="mobileAmount" placeholder="Enter Amount" required type="text">
+                  </div>
+                  <div class="col-md-6 col-lg-2 form-group">
+                    <button class="btn btn-primary btn-block" type="submit">Continue</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="tab-pane fade" id="second" role="tabpanel" aria-labelledby="second-tab">
+              <form id="dthRechargeBill" method="post">
+                <div class="form-row">
+                  <div class="col-md-6 col-lg-3 form-group">
+                    <select class="custom-select" required="">
+                      <option value="">Select Your Operator</option>
+                      <option>1st Operator</option>
+                      <option>2nd Operator</option>
+                      <option>3rd Operator</option>
+                      <option>4th Operator</option>
+                      <option>5th Operator</option>
+                      <option>6th Operator</option>
+                      <option>7th Operator</option>
+                    </select>
+                  </div>
+                  <div class="col-md-6 col-lg-4 form-group">
+                    <input type="text" class="form-control" data-bv-field="number" id="cardNumber" required placeholder="Enter Your Card Number">
+                  </div>
+                  <div class="col-md-6 col-lg-3 form-group"> <a href="#" data-target="#view-plans" data-toggle="modal" class="view-plans-link">View Plans</a>
+                    <input class="form-control" id="DTHamount" placeholder="Enter Amount" required type="text">
+                  </div>
+                  <div class="col-md-6 col-lg-2 form-group">
+                    <button class="btn btn-primary btn-block" type="submit">Continue</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+            
+            
+            
+            
+            <div class="tab-pane fade" id="seventh" role="tabpanel" aria-labelledby="seventh-tab">
+              <form id="electricityBill" method="post">
+                <div class="form-row">
+                  <div class="col-lg-10">
+                    <div class="form-row">
+                      <div class="col-md-6 col-lg-3 form-group">
+                        <select class="custom-select" required="">
+                          <option value="">Select Your Operator</option>
+                          <option>1st Operator</option>
+                          <option>2nd Operator</option>
+                          <option>3rd Operator</option>
+                          <option>4th Operator</option>
+                          <option>5th Operator</option>
+                          <option>6th Operator</option>
+                          <option>7th Operator</option>
+                        </select>
+                      </div>
+                      <div class="col-md-6 col-lg-3 form-group">
+                        <select class="custom-select" id="yourState" required="">
+                          <option value="">Select Your State</option>
+                          <option>1st State</option>
+                          <option>2nd State</option>
+                          <option>3rd State</option>
+                          <option>4th State</option>
+                          <option>5th State</option>
+                          <option>6th State</option>
+                          <option>7th State</option>
+                          <option>8th State</option>
+                          <option>9th State</option>
+                          <option>10th State</option>
+                          <option>11th State</option>
+                          <option>12th State</option>
+                          <option>13th State</option>
+                          <option>14th State</option>
+                        </select>
+                      </div>
+                      <div class="col-md-6 col-lg-3 form-group">
+                        <input type="text" class="form-control" data-bv-field="number" id="serviceNumber" required placeholder="Enter Service Number">
+                      </div>
+                      <div class="col-md-6 col-lg-3 form-group">
+                        <input class="form-control" id="electricityamount" placeholder="Enter Amount" required type="text">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-2 form-group">
+                    <button class="btn btn-primary btn-block" type="submit">Continue</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+            
+            
+      
+          </div><!-- Tabs End -->
+        
+        <!-- Welcome Text
+        ============================================= -->
+          <div class="text-center mt-5">
+            <h2 class="text-9 font-weight-300 text-light text-center">Online Quick Recharge. Save Time and Money!</h2>
+            <a class="btn btn-outline-light mt-3 mt-md-4" data-toggle="modal" data-target="#login-signup" href="#" title="Sign Up">Login / Sign Up</a> </div><!-- Welcome Text end --> 
+          
+        </div>
+      </div>
+    </div>
+    
+    <!-- Why choose
+    ============================================= -->
+    <section class="section bg-light shadow-md">
+      <div class="container">
+        <h2 class="text-9 font-weight-500 text-center">Why choose Quickai?</h2>
+        <p class="lead text-center mb-5">Save Time and Money!</p>
+        <div class="row">
+          <div class="col-lg-9 mx-auto">
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="featured-box mb-5 style-3">
+                  <div class="featured-box-icon border text-primary rounded-circle"> <i class="fas fa-piggy-bank"></i> </div>
+                  <h3>Low cost</h3>
+                  <p>Always get cheapest price with the best in the industry.</p>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="featured-box mb-5 style-3">
+                  <div class="featured-box-icon border text-primary rounded-circle"> <i class="fas fa-rocket"></i> </div>
+                  <h3>Fast</h3>
+                  <p>Get your recharge to family and friends in minutes</p>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="featured-box mb-5 style-3">
+                  <div class="featured-box-icon border text-primary rounded-circle"> <i class="fas fa-file-alt"></i> </div>
+                  <h3>Simple</h3>
+                  <p>You get $20. You can use these credits to take recharge.</p>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="featured-box mb-5 style-3">
+                  <div class="featured-box-icon border text-primary rounded-circle"> <i class="fas fa-hands-helping"></i> </div>
+                  <h3>Trust pay</h3>
+                  <p>100% Payment Protection. Easy Return Policy.</p>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="featured-box mb-5 style-3">
+                  <div class="featured-box-icon border text-primary rounded-circle"> <i class="fas fa-lock"></i> </div>
+                  <h3>100% Secure Payments</h3>
+                  <p>Moving your card details to a much more secured place.</p>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="featured-box mb-5 style-3">
+                  <div class="featured-box-icon border text-primary rounded-circle"> <i class="far fa-life-ring"></i> </div>
+                  <h3>24X7 Support</h3>
+                  <p>We're here to help. Have a query and need help ? <a href="#">Click here</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Why choose end --> 
+    
+    <!-- Banner
+    ============================================= -->
+    <section class="section">
+      <div class="container">
+        <h2 class="text-9 font-weight-500 text-center">Featured Offers</h2>
+        <p class="lead text-center mb-4">Get Best Offers &amp; Discounts</p>
+        <div class="row banner">
+          <div class="col-md-4">
+            <div class="item rounded"> <a href="#">
+              <div class="caption">
+                <h2>10% OFF</h2>
+                <p>On Metro Booking</p>
+              </div>
+              <div class="banner-mask"></div>
+              <img class="img-fluid" src="images/slider/small-banner-13-600x320.jpg" alt="banner"> </a> </div>
+          </div>
+          <div class="col-md-4 mt-4 mt-md-0">
+            <div class="item rounded"> <a href="#">
+              <div class="caption">
+                <h2>15% OFF</h2>
+                <p>On electricity Bill Payment</p>
+              </div>
+              <div class="banner-mask"></div>
+              <img class="img-fluid" src="images/slider/small-banner-14-600x320.jpg" alt="banner"> </a> </div>
+          </div>
+          <div class="col-md-4 mt-4 mt-md-0">
+            <div class="item rounded"> <a href="#">
+              <div class="caption">
+                <h2>10% OFF</h2>
+                <p>On DTH Recharge</p>
+              </div>
+              <div class="banner-mask"></div>
+              <img class="img-fluid" src="images/slider/small-banner-15-600x320.jpg" alt="banner"> </a> </div>
+          </div>
+        </div>
+        <div class="row banner mt-4 mb-2">
+          <div class="col-md-6">
+            <div class="item rounded"> <a href="#">
+              <div class="caption">
+                <h2>Save 20% on Recharge &amp; Bill</h2>
+                <p>Use Code: Recharge20</p>
+              </div>
+              <div class="banner-mask"></div>
+              <img class="img-fluid" src="images/slider/small-banner-11-600x220.jpg" alt="banner"> </a> </div>
+          </div>
+          <div class="col-md-6">
+            <div class="item rounded"> <a href="#">
+              <div class="caption">
+                <h2>5% OFF on Bill Payment</h2>
+                <p>Use Code: Bill5</p>
+              </div>
+              <div class="banner-mask"></div>
+              <img class="img-fluid" src="images/slider/small-banner-12-600x220.jpg" alt="banner"> </a> </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Banner end --> 
+    
+    <!-- Refer & Earn
+    ============================================= -->
+    <section class="hero-wrap section shadow-md">
+      <div class="hero-mask opacity-5 bg-dark"></div>
+      <div class="hero-bg" style="background-image:url('./images/bg/image-3.jpg');"></div>
+      <div class="hero-content">
+        <div class="container">
+          <h2 class="text-9 font-weight-500 text-light text-center">Refer & Earn</h2>
+          <p class="lead text-light opacity-8 text-center mb-5">Refer your friends and earn up to $20.</p>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="featured-box text-center p-4">
+                <div class="hero-mask opacity-7 bg-dark rounded"></div>
+                <div class="hero-content">
+                  <div class="featured-box-icon shadow-none text-light mt-3 mb-4"> <i class="fas fa-bullhorn"></i> </div>
+                  <h3 class="text-light">You Refer Friends</h3>
+                  <p class="text-3 text-light opacity-8">Share your referral link with friends. They get $10.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mt-4 mt-md-0">
+              <div class="featured-box text-center p-4">
+                <div class="hero-mask opacity-7 bg-primary rounded"></div>
+                <div class="hero-content">
+                  <div class="featured-box-icon shadow-none text-light mt-3 mb-4"> <i class="fas fa-sign-in-alt"></i> </div>
+                  <h3 class="text-light">Your Friends Register</h3>
+                  <p class="text-3 text-light opacity-8">Your friends Register with using your referral link.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mt-4 mt-md-0">
+              <div class="featured-box text-center p-4">
+                <div class="hero-mask opacity-7 bg-dark rounded"></div>
+                <div class="hero-content">
+                  <div class="featured-box-icon shadow-none text-light mt-3 mb-4"> <i class="fas fa-dollar-sign"></i> </div>
+                  <h3 class="text-light">Earn You</h3>
+                  <p class="text-3 text-light opacity-8">You get $20. You can use these credits to take recharge.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="text-center pt-5"> <a href="#" class="btn btn-outline-light shadow-none">Get Started Earn</a> </div>
+        </div>
+      </div>
+    </section>
+    <!-- Refer & Earn end --> 
+    
+    <!-- Partners
+    ============================================= -->
+    <div class="section bg-light">
+      <div class="container">
+        <h2 class="text-9 font-weight-500 text-center mb-4">Our Partners</h2>
+        <ul class="nav nav-tabs justify-content-center" id="myPartners" role="tablist">
+          <li class="nav-item"> <a class="nav-link active" id="operator-one-tab" data-toggle="tab" href="#operator-one" role="tab" aria-controls="operator-one" aria-selected="true">Recharge & Bill</a> </li>
+          <li class="nav-item"> <a class="nav-link" id="operator-two-tab" data-toggle="tab" href="#operator-two" role="tab" aria-controls="operator-two" aria-selected="false">Landline</a> </li>
+          <li class="nav-item"> <a class="nav-link" id="operator-three-tab" data-toggle="tab" href="#operator-three" role="tab" aria-controls="operator-three" aria-selected="false">Electricity</a> </li>
+          <li class="nav-item"> <a class="nav-link" id="operator-four-tab" data-toggle="tab" href="#operator-four" role="tab" aria-controls="operator-four" aria-selected="false">Metro</a> </li>
+          <li class="nav-item"> <a class="nav-link" id="operator-five-tab" data-toggle="tab" href="#operator-five" role="tab" aria-controls="operator-five" aria-selected="false">Gas</a> </li>
+        </ul>
+        <div class="tab-content mt-4" id="myPartnersContent">
+          <div class="tab-pane fade show active" id="operator-one" role="tabpanel" aria-labelledby="operator-one-tab">
+            <div class="brands-grid">
+              <div class="row">
+                <div class="col-4 col-sm-3 col-md-2 col-lg text-center"> <a href=""> <img class="img-fluid border rounded-circle" src="images/brands/operator/operator.png" alt="Brands"> <span class="d-block">Airtel</span> </a> </div>
+                <div class="col-4 col-sm-3 col-md-2 col-lg text-center"><a href=""><img class="img-fluid border rounded-circle" src="images/brands/operator/operator.png" alt="Brands"><span class="d-block">Vodafone</span></a></div>
+                <div class="col-4 col-sm-3 col-md-2 col-lg text-center"><a href=""><img class="img-fluid border rounded-circle" src="images/brands/operator/operator.png" alt="Brands"><span class="d-block">Airtel</span></a></div>
+                <div class="col-4 col-sm-3 col-md-2 col-lg text-center"><a href=""><img class="img-fluid border rounded-circle" src="images/brands/operator/operator.png" alt="Brands"><span class="d-block">Telenor</span></a></div>
+                <div class="col-4 col-sm-3 col-md-2 col-lg text-center"><a href=""><img class="img-fluid border rounded-circle" src="images/brands/operator/operator.png" alt="Brands"><span class="d-block">BSNL</span></a></div>
+                <div class="col-4 col-sm-3 col-md-2 col-lg text-center"><a href=""><img class="img-fluid border rounded-circle" src="images/brands/operator/operator.png" alt="Brands"><span class="d-block">Jio</span></a></div>
+                <div class="col-4 col-sm-3 col-md-2 col-lg text-center"><a href=""><img class="img-fluid border rounded-circle" src="images/brands/operator/operator.png" alt="Brands"><span class="d-block">Idea</span></a></div>
+                <div class="col-4 col-sm-3 col-md-2 col-lg text-center"><a href=""><img class="img-fluid border rounded-circle" src="images/brands/operator/operator.png" alt="Brands"><span class="d-block">Docomo</span></a></div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="operator-two" role="tabpanel" aria-labelledby="operator-two-tab">
+            <div class="brands-grid">
+              <div class="row">
+                <div class="col-4 col-sm-2 col-lg text-center"><a href=""><img class="img-fluid border rounded-circle" src="images/brands/operator/operator.png" alt="Brands"><span class="d-block">BSNL Landline - Corporate</span></a></div>
+                <div class="col-4 col-sm-2 col-lg text-center"><a href=""><img class="img-fluid border rounded-circle" src="images/brands/operator/operator.png" alt="Brands"><span class="d-block">Reliance Communications</span></a></div>
+                <div class="col-4 col-sm-2 col-lg text-center"><a href=""><img class="img-fluid border rounded-circle" src="images/brands/operator/operator.png" alt="Brands"><span class="d-block">Tata TeleServices</span></a></div>
+                <div class="col-4 col-sm-2 col-lg text-center"><a href=""><img class="img-fluid border rounded-circle" src="images/brands/operator/operator.png" alt="Brands"><span class="d-block">Tikona Digital Networks Private Limited</span></a></div>
+                <div class="col-4 col-sm-2 col-lg text-center"><a href=""><img class="img-fluid border rounded-circle" src="images/brands/operator/operator.png" alt="Brands"><span class="d-block">Airtel Landline</span></a></div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="operator-three" role="tabpanel" aria-labelledby="operator-three-tab">
+            <div class="brands-grid">
+              <div class="row">
+                <div class="col-4 col-sm-2 col-lg text-center"> <a href=""> <img class="img-fluid border rounded-circle" src="images/brands/operator/operator.png" alt="Brands"> <span class="d-block">Torrent power</span> </a> </div>
+                <div class="col-4 col-sm-2 col-lg text-center"><a href=""><img class="img-fluid border rounded-circle" src="images/brands/operator/operator.png" alt="Brands"><span class="d-block">APEPDCL - Eastern Power Ltd.</span></a></div>
+                <div class="col-4 col-sm-2 col-lg text-center"><a href=""><img class="img-fluid border rounded-circle" src="images/brands/operator/operator.png" alt="Brands"><span class="d-block">WESCO Utility</span></a></div>
+                <div class="col-4 col-sm-2 col-lg text-center"><a href=""><img class="img-fluid border rounded-circle" src="images/brands/operator/operator.png" alt="Brands"><span class="d-block">Tata Power - Delhi</span></a></div>
+                <div class="col-4 col-sm-2 col-lg text-center"><a href=""><img class="img-fluid border rounded-circle" src="images/brands/operator/operator.png" alt="Brands"><span class="d-block">DNH Power</span></a></div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="operator-four" role="tabpanel" aria-labelledby="operator-four-tab">
+            <div class="brands-grid">
+              <div class="row">
+                <div class="col-4 col-sm-2 col-lg text-center"> <a href=""> <img class="img-fluid border rounded-circle" src="images/brands/operator/operator.png" alt="Brands"> <span class="d-block">Mumbai Metro</span> </a> </div>
+                <div class="col-4 col-sm-2 col-lg text-center"><a href=""><img class="img-fluid border rounded-circle" src="images/brands/operator/operator.png" alt="Brands"><span class="d-block">Delhi Metro</span></a></div>
+                <div class="col-4 col-sm-2 col-lg text-center"><a href=""><img class="img-fluid border rounded-circle" src="images/brands/operator/operator.png" alt="Brands"><span class="d-block">Ahmedabad Metro</span></a></div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="operator-five" role="tabpanel" aria-labelledby="operator-five-tab">
+            <div class="brands-grid">
+              <div class="row">
+                <div class="col-4 col-sm-2 col-lg text-center"> <a href=""> <img class="img-fluid border rounded-circle" src="images/brands/operator/operator.png" alt="Brands"> <span class="d-block">Adani Gas</span> </a> </div>
+                <div class="col-4 col-sm-2 col-lg text-center"><a href=""><img class="img-fluid border rounded-circle" src="images/brands/operator/operator.png" alt="Brands"><span class="d-block">Tripura Natural Gas</span></a></div>
+                <div class="col-4 col-sm-2 col-lg text-center"><a href=""><img class="img-fluid border rounded-circle" src="images/brands/operator/operator.png" alt="Brands"><span class="d-block">Sabarmati Gas Limited (SGL)</span></a></div>
+                <div class="col-4 col-sm-2 col-lg text-center"><a href=""><img class="img-fluid border rounded-circle" src="images/brands/operator/operator.png" alt="Brands"><span class="d-block">Indraprastha Gas Limited (IGL)</span></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Partners end --> 
+    
+    <!-- Mobile App
+    ============================================= -->
+    <section class="section bg-secondary">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="text-9 text-light font-weight-400 mb-4">Download Our App and Get $1 Free </h2>
+          <a href="#" class="mr-4 btn btn-sm btn-light shadow-none d-inline-flex align-items-center"><i class="fab fa-apple fa-2x mr-2"></i> Get it on the App Store</a> <a href="#" class="btn btn-sm btn-light shadow-none d-inline-flex align-items-center"><i class="fab fa-android fa-2x mr-2"></i> Get it on Google Play</a> </div>
+      </div>
+    </section>
+    <!-- Mobile App end --> 
+    
+  </div>
+  <!-- Content end --> 
+  
+  <!-- Footer
+  ============================================= -->
+  <footer id="footer">
+    <div class="container mt-4">
+      <div class="row">
+        <div class="col-md-4 mb-3 mb-md-0">
+          <p>Payment</p>
+          <ul class="payments-types">
+            <li><a href="#" target="_blank"> <img data-toggle="tooltip" src="images/payment/visa.png" alt="visa" title="Visa"></a></li>
+            <li><a href="#" target="_blank"> <img data-toggle="tooltip" src="images/payment/discover.png" alt="discover" title="Discover"></a></li>
+            <li><a href="#" target="_blank"> <img data-toggle="tooltip" src="images/payment/paypal.png" alt="paypal" title="PayPal"></a></li>
+            <li><a href="#" target="_blank"> <img data-toggle="tooltip" src="images/payment/american.png" alt="american express" title="American Express"></a></li>
+            <li><a href="#" target="_blank"> <img data-toggle="tooltip" src="images/payment/mastercard.png" alt="discover" title="Discover"></a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 mb-3 mb-md-0">
+          <p>Subscribe</p>
+          <div class="input-group newsletter">
+            <input class="form-control" placeholder="Your Email Address" name="newsletterEmail" id="newsletterEmail" type="text">
+            <span class="input-group-append">
+            <button class="btn btn-secondary" type="submit">Subscribe</button>
+            </span> </div>
+        </div>
+        <div class="col-md-4 d-flex align-items-md-end flex-column">
+          <p>Keep in touch</p>
+          <ul class="social-icons">
+            <li class="social-icons-facebook"><a data-toggle="tooltip" href="http://www.facebook.com/" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+            <li class="social-icons-twitter"><a data-toggle="tooltip" href="http://www.twitter.com/" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+            <li class="social-icons-google"><a data-toggle="tooltip" href="http://www.google.com/" target="_blank" title="Google"><i class="fab fa-google"></i></a></li>
+            <li class="social-icons-linkedin"><a data-toggle="tooltip" href="http://www.linkedin.com/" target="_blank" title="Linkedin"><i class="fab fa-linkedin-in"></i></a></li>
+            <li class="social-icons-youtube"><a data-toggle="tooltip" href="http://www.youtube.com/" target="_blank" title="Youtube"><i class="fab fa-youtube"></i></a></li>
+            <li class="social-icons-instagram"><a data-toggle="tooltip" href="http://www.instagram.com/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="footer-copyright">
+        <ul class="nav justify-content-center">
+          <li class="nav-item"> <a class="nav-link active" href="#">About Us</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="#">Faq</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="#">Contact</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="#">Support</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="#">Terms of Use</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="#">Privacy Policy</a> </li>
+        </ul>
+        <p class="copyright-text">Copyright © 2018 <a href="#">Quickai</a>. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer end --> 
+  
+</div>
+<!-- Document Wrapper end --> 
+
+<!-- Back to Top
+============================================= --> 
+<a id="back-to-top" data-toggle="tooltip" title="Back to Top" href="javascript:void(0)"><i class="fa fa-chevron-up"></i></a> 
+
+<!-- Modal Dialog - View Plans
+============================================= -->
+<div id="view-plans" class="modal fade" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Browse Plans</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">×</span> </button>
+      </div>
+      <div class="modal-body">
+        <form class="form-row mb-4 mb-sm-2" method="post">
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="form-group">
+              <select class="custom-select" required="">
+                <option value="">Select Your Operator</option>
+                <option>1st Operator</option>
+                <option>2nd Operator</option>
+                <option>3rd Operator</option>
+                <option>4th Operator</option>
+                <option>5th Operator</option>
+                <option>6th Operator</option>
+                <option>7th Operator</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="form-group">
+              <select class="custom-select" required="">
+                <option value="">Select Your Circle</option>
+                <option>1st Circle</option>
+                <option>2nd Circle</option>
+                <option>3rd Circle</option>
+                <option>4th Circle</option>
+                <option>5th Circle</option>
+                <option>6th Circle</option>
+                <option>7th Circle</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="form-group">
+              <select class="custom-select" required="">
+                <option value="">All Plans</option>
+                <option>Topup</option>
+                <option>Full Talktime</option>
+                <option>Validity Recharge</option>
+                <option>SMS</option>
+                <option>Data</option>
+                <option>Unlimited Talktime</option>
+                <option>STD</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+            <button class="btn btn-primary btn-block" type="submit">View Plans</button>
+          </div>
+        </form>
+        <div class="plans">
+          <div class="table-responsive-md">
+            <table class="table table-hover border">
+              <tbody>
+                <tr>
+                  <td class="text-5 text-primary text-center align-middle">$10 <span class="text-1 text-muted d-block">Amount</span></td>
+                  <td class="text-3 text-center align-middle">8 <span class="text-1 text-muted d-block">Talktime</span></td>
+                  <td class="text-3 text-center align-middle">7 Days <span class="text-1 text-muted d-block">Validity</span></td>
+                  <td class="text-1 text-muted align-middle">Talktime $8 & 2 Local & National SMS & Free SMS valid for 2 day(s)</td>
+                  <td class="align-middle"><button class="btn btn-sm btn-outline-primary shadow-none text-nowrap" type="submit">Recharge Now</button></td>
+                </tr>
+                <tr>
+                  <td class="text-5 text-primary text-center align-middle">$15 <span class="text-1 text-muted d-block">Amount</span></td>
+                  <td class="text-3 text-center align-middle">13 <span class="text-1 text-muted d-block">Talktime</span></td>
+                  <td class="text-3 text-center align-middle">15 Days <span class="text-1 text-muted d-block">Validity</span></td>
+                  <td class="text-1 text-muted align-middle">Regular Talktime</td>
+                  <td class="align-middle"><button class="btn btn-sm btn-outline-primary shadow-none text-nowrap" type="submit">Recharge Now</button></td>
+                </tr>
+                <tr>
+                  <td class="text-5 text-primary text-center align-middle">$50 <span class="text-1 text-muted d-block">Amount</span></td>
+                  <td class="text-3 text-center align-middle">47 <span class="text-1 text-muted d-block">Talktime</span></td>
+                  <td class="text-3 text-center align-middle">28 Days <span class="text-1 text-muted d-block">Validity</span></td>
+                  <td class="text-1 text-muted align-middle">47 Local Vodafone min free </td>
+                  <td class="align-middle"><button class="btn btn-sm btn-outline-primary shadow-none text-nowrap" type="submit">Recharge Now</button></td>
+                </tr>
+                <tr>
+                  <td class="text-5 text-primary text-center align-middle">$100 <span class="text-1 text-muted d-block">Amount</span></td>
+                  <td class="text-3 text-center align-middle">92 <span class="text-1 text-muted d-block">Talktime</span></td>
+                  <td class="text-3 text-center align-middle">28 Days <span class="text-1 text-muted d-block">Validity</span></td>
+                  <td class="text-1 text-muted align-middle">Local min 92 & 10 Local & National SMS & Free SMS valid for 
+                    7 day(s).</td>
+                  <td class="align-middle"><button class="btn btn-sm btn-outline-primary shadow-none text-nowrap" type="submit">Recharge Now</button></td>
+                </tr>
+                <tr>
+                  <td class="text-5 text-primary text-center align-middle">$150 <span class="text-1 text-muted d-block">Amount</span></td>
+                  <td class="text-3 text-center align-middle">143 <span class="text-1 text-muted d-block">Talktime</span></td>
+                  <td class="text-3 text-center align-middle">60 Days <span class="text-1 text-muted d-block">Validity</span></td>
+                  <td class="text-1 text-muted align-middle">Talktime $143 & 50 Local & National SMS & Free SMS valid for 
+                    15 day(s).</td>
+                  <td class="align-middle"><button class="btn btn-sm btn-outline-primary shadow-none text-nowrap" type="submit">Recharge Now</button></td>
+                </tr>
+                <tr>
+                  <td class="text-5 text-primary text-center align-middle">$220 <span class="text-1 text-muted d-block">Amount</span></td>
+                  <td class="text-3 text-center align-middle">220 <span class="text-1 text-muted d-block">Talktime</span></td>
+                  <td class="text-3 text-center align-middle">28 Days <span class="text-1 text-muted d-block">Validity</span></td>
+                  <td class="text-1 text-muted align-middle">Full Talktime</td>
+                  <td class="align-middle"><button class="btn btn-sm btn-outline-primary shadow-none text-nowrap" type="submit">Recharge Now</button></td>
+                </tr>
+                <tr>
+                  <td class="text-5 text-primary text-center align-middle">$250 <span class="text-1 text-muted d-block">Amount</span></td>
+                  <td class="text-3 text-center align-middle">250 <span class="text-1 text-muted d-block">Talktime</span></td>
+                  <td class="text-3 text-center align-middle">28 Days <span class="text-1 text-muted d-block">Validity</span></td>
+                  <td class="text-1 text-muted align-middle">Full Talktime + 50 SMS per day for 7 days.</td>
+                  <td class="align-middle"><button class="btn btn-sm btn-outline-primary shadow-none text-nowrap" type="submit">Recharge Now</button></td>
+                </tr>
+                <tr>
+                  <td class="text-5 text-primary text-center align-middle">$300 <span class="text-1 text-muted d-block">Amount</span></td>
+                  <td class="text-3 text-center align-middle">301 <span class="text-1 text-muted d-block">Talktime</span></td>
+                  <td class="text-3 text-center align-middle">64 Days <span class="text-1 text-muted d-block">Validity</span></td>
+                  <td class="text-1 text-muted align-middle">Full Talktime</td>
+                  <td class="align-middle"><button class="btn btn-sm btn-outline-primary shadow-none text-nowrap" type="submit">Recharge Now</button></td>
+                </tr>
+                <tr>
+                  <td class="text-5 text-primary text-center align-middle">$410 <span class="text-1 text-muted d-block">Amount</span></td>
+                  <td class="text-3 text-center align-middle">0 <span class="text-1 text-muted d-block">Talktime</span></td>
+                  <td class="text-3 text-center align-middle">28 Days <span class="text-1 text-muted d-block">Validity</span></td>
+                  <td class="text-1 text-muted align-middle">Unlimited Local,STD & Roaming calls</td>
+                  <td class="align-middle"><button class="btn btn-sm btn-outline-primary shadow-none text-nowrap" type="submit">Recharge Now</button></td>
+                </tr>
+                <tr>
+                  <td class="text-5 text-primary text-center align-middle">$501 <span class="text-1 text-muted d-block">Amount</span></td>
+                  <td class="text-3 text-center align-middle">510 <span class="text-1 text-muted d-block">Talktime</span></td>
+                  <td class="text-3 text-center align-middle">180 Days <span class="text-1 text-muted d-block">Validity</span></td>
+                  <td class="text-1 text-muted align-middle">Full Talktime + 100 SMS per day for 28 days.</td>
+                  <td class="align-middle"><button class="btn btn-sm btn-outline-primary shadow-none text-nowrap" type="submit">Recharge Now</button></td>
+                </tr>
+                <tr>
+                  <td class="text-5 text-primary text-center align-middle">$799 <span class="text-1 text-muted d-block">Amount</span></td>
+                  <td class="text-3 text-center align-middle">820 <span class="text-1 text-muted d-block">Talktime</span></td>
+                  <td class="text-3 text-center align-middle">250 Days <span class="text-1 text-muted d-block">Validity</span></td>
+                  <td class="text-1 text-muted align-middle">Full Talktime + 100 SMS per day for 84 days.</td>
+                  <td class="align-middle"><button class="btn btn-sm btn-outline-primary shadow-none text-nowrap" type="submit">Recharge Now</button></td>
+                </tr>
+                <tr>
+                  <td class="text-5 text-primary text-center align-middle">$999 <span class="text-1 text-muted d-block">Amount</span></td>
+                  <td class="text-3 text-center align-middle">1099 <span class="text-1 text-muted d-block">Talktime</span></td>
+                  <td class="text-3 text-center align-middle">356 Days <span class="text-1 text-muted d-block">Validity</span></td>
+                  <td class="text-1 text-muted align-middle">Full Talktime + 100 SMS per day for 90 days.</td>
+                  <td class="align-middle"><button class="btn btn-sm btn-outline-primary shadow-none text-nowrap" type="submit">Recharge Now</button></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal Dialog - View Plans end --> 
+
+<!-- Modal Dialog - Login/Signup
+============================================= -->
+<div id="login-signup" class="modal fade" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content p-sm-3">
+      <div class="modal-body">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+        <ul class="nav nav-tabs" role="tablist">
+          <li class="nav-item"> <a id="login-tab" class="nav-link active text-4" data-toggle="tab" href="#login" role="tab" aria-controls="login" aria-selected="true">Login</a> </li>
+          <li class="nav-item"> <a id="signup-tab" class="nav-link text-4" data-toggle="tab" href="#signup" role="tab" aria-controls="signup" aria-selected="false">Sign Up</a> </li>
+        </ul>
+        <div class="tab-content pt-4">
+          <div class="tab-pane fade show active" id="login" role="tabpanel" aria-labelledby="login-tab">
+            <form id="loginForm" method="post">
+              <div class="form-group">
+                <input type="email" class="form-control" id="loginMobile" required placeholder="Mobile or Email ID">
+              </div>
+              <div class="form-group">
+                <input type="password" class="form-control" id="loginPassword" required placeholder="Password">
+              </div>
+              <div class="row mb-4">
+                <div class="col-sm">
+                  <div class="form-check custom-control custom-checkbox">
+                    <input id="remember-me" name="remember" class="custom-control-input" type="checkbox">
+                    <label class="custom-control-label" for="remember-me">Remember Me</label>
+                  </div>
+                </div>
+                <div class="col-sm text-right"> <a class="justify-content-end" href="#">Forgot Password ?</a> </div>
+              </div>
+              <button class="btn btn-primary btn-block" type="submit">Login</button>
+            </form>
+          </div>
+          <div class="tab-pane fade" id="signup" role="tabpanel" aria-labelledby="signup-tab">
+            <form id="signupForm" method="post">
+              <div class="form-group">
+                <input type="text" class="form-control" data-bv-field="number" id="signupEmail" required placeholder="Email ID">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" id="signupMobile" required placeholder="Mobile Number">
+              </div>
+              <div class="form-group">
+                <input type="password" class="form-control" id="signuploginPassword" required placeholder="Password">
+              </div>
+              <button class="btn btn-primary btn-block" type="submit">Signup</button>
+            </form>
+          </div>
+          <div class="d-flex align-items-center my-4">
+            <hr class="flex-grow-1">
+            <span class="mx-2">OR</span>
+            <hr class="flex-grow-1">
+          </div>
+          <div class="row">
+            <div class="col-12 mb-3">
+              <button type="button" class="btn btn-block btn-outline-primary">Login with Facebook</button>
+            </div>
+            <div class="col-12">
+              <button type="button" class="btn btn-block btn-outline-danger">Login with Google</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal Dialog - Login/Signup end --> 
+
+<!-- Script --> 
+<script src="vendor/jquery/jquery.min.js"></script> 
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script> 
+<script src="vendor/owl.carousel/owl.carousel.min.js"></script> 
+<script src="js/theme.js"></script>
+</body>
+</html>

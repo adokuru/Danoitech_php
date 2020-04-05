@@ -1,0 +1,86 @@
+/*!
+ * jQuery-Seat-Charts v1.1.5
+ * https://github.com/mateuszmarkowski/jQuery-Seat-Charts
+ *
+ * Copyright 2013, 2016 Mateusz Markowski
+ * Released under the MIT license
+ */
+ 
+.seatCharts-container {
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	padding: 25px 25px 20px 10px;
+	display: inline-block;
+	position: relative;
+}
+.seatCharts-cell {
+	height: 27px;
+	width: 27px;
+	line-height: 27px;
+	margin: 3px;
+	float: left;
+	text-align: center;
+	outline: none;
+	font-size: 13px;
+}
+.seatCharts-seat {
+	background-color: #ccc;
+	color: white;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	cursor: pointer;
+}
+.seatCharts-seat:focus {
+	border: none;
+}
+.front-indicator {
+	position: absolute;
+	padding: 2px 12px;
+	left: calc(50% - 35px);
+	top: -13px;
+	background: #fff;
+	text-transform: uppercase;
+	color: #999
+}
+.seatCharts-space {
+	background-color: white;
+}
+.seatCharts-row {
+	height: 35px;
+}
+.seatCharts-row:after {
+	clear: both;
+}
+.seatCharts-seat.selected {
+	background-color: #20bf7a;
+}
+.seatCharts-seat.focused {
+	background-color: #20bf7a;
+}
+.seatCharts-seat.available {
+	background-color: #ccc;
+}
+.seatCharts-seat.available.first-class {
+	background-color: #999;
+}
+.seatCharts-seat.unavailable {
+	background-color: #F00;
+	cursor: not-allowed;
+}
+ul.seatCharts-legendList {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+li.seatCharts-legendItem {
+	margin-top: 5px;
+	display: inline-block;
+	margin-right: 6px;
+	font-size: 13px;
+}
+li.seatCharts-legendItem .seatCharts-cell {
+	width: 15px;
+	height: 15px;
+	cursor: default;
+}
