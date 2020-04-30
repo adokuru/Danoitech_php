@@ -1,13 +1,6 @@
 <?php 
 
-
-// $username: "baxi_test";
-// $usersecret: "5xjqQ7MafFJ5XBTN";
-// $apikey: "5adea9-044a85-708016-7ae662-646d59"; 
-// Authorization: $apikey;
-$i = 1;
-if ($i == 1) 
-
+if (isset($_POST['phoneNumber'])) 
 	{
 		$apibase = 'https://payments.baxipay.com.ng/api/baxipay/services/airtime/request';
 		$phonenumber = $_POST['phoneNumber'];
@@ -40,5 +33,29 @@ if ($i == 1)
 		$data = json_decode($json);
 		echo $result . PHP_EOL;
 	}
+
+if (isset($_POST['dataoperator'])) { 	
+		$ch = curl_init();
+		$network = $_POST['dataoperator'];
+		curl_setopt($ch, CURLOPT_URL, 'https://payments.baxipay.com.ng/api/baxipay/services/databundle/bundles?service_type='.$network);
+		curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+		curl_setopt($ch, CURLOPT_POST, 1);
+
+		$headers = array();
+		$headers[] = 'Accept: */*';
+		$headers[] = 'X-Api-Key: 5adea9-044a85-708016-7ae662-646d59';
+		$headers[] = 'X-Csrf-Token: ';
+		curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+
+		$result = curl_exec($ch);
+		if (curl_errno($ch)) {
+		    echo 'Error:' . curl_error($ch);
+		}
+		curl_close($ch);
+		$json = $result;
+		$data = json_decode($json);
+		echo $result . PHP_EOL;
+ } 
+
 
 ?>

@@ -142,17 +142,20 @@
         <div class="row">
         
           <!-- CableTv Recharge
+
           ============================================= -->
+            <div id="loader" class="lds-dual-ring hidden overlay"></div>
           <div class="col-lg-4 mb-4 mb-lg-0">
             <h2 class="text-4 mb-3">Best internet Subscriptions Here</h2>
-            <form id="cableTvRechargeBill" method="post">
+            <form id="dthRechargeBill" name="dthRechargeBill"  method="post">
               <div class="form-group">
-                  <select class="custom-select" id="operator" required="">
+                  <select class="custom-select" id="dataoperator" name="dataoperator" required="">
                     <option value="">Select Your Operator</option>
-                      <option>AIRTEL</option>
-                      <option>GLO</option>
-                      <option>MTN</option>
-                      <option>9 Mobile</option>
+                      <option value="">Select Your Operator</option>
+                      <option value="airtel">AIRTEL</option>
+                      <option value="glo">GLO</option>
+                      <option value="mtn">MTN</option>
+                      <option value="9mobile">9 Mobile</option>
                   </select>
                 </div>
               <div class="form-group">

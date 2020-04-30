@@ -17,4 +17,19 @@ $(document).ready(function() {
 			}
        });
      });
+     $('#dataoperator').on('change', 'select', function(){
+        var dataoperator = $('#form_stadt_kanton').serializeArray();
+         $.ajax({
+            type: "POST",
+            url: 'api/baxi.php',
+            data: dataoperator,
+            dataType: "json",
+            beforeSend: function() {
+                $('#loader').removeClass('hidden');
+            },
+            success: function(response) {
+            console.log(response);
+            }
+    });
+});
 });

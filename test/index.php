@@ -109,6 +109,7 @@
   
   <!-- Content
   ============================================= -->
+    <div id="loader" class="lds-dual-ring hidden overlay"></div>
   <div id="content">
     <div class="hero-wrap py-2 py-md-3 py-lg-4">
       <div class="hero-mask opacity-3 bg-dark"></div>
@@ -156,22 +157,24 @@
 
 
             <div class="tab-pane fade" id="second" role="tabpanel" aria-labelledby="second-tab">
-              <form id="dthRechargeBill" method="post">
+              <form id="dthRechargeBill" name="dthRechargeBill" method="post">
                 <div class="form-row">
-                  <div class="col-md-6 col-lg-3 form-group">
-                    <select class="custom-select" required="">
+                  <div class="col-md-4 col-lg-3 form-group">
+                    <select class="custom-select" id="dataoperator" name="dataoperator" required="">
                       <option value="">Select Your Operator</option>
-                        <option>AIRTEL</option>
-                      <option>GLO</option>
-                      <option>MTN</option>
-                      <option>9 Mobile</option>
+                     <option value="">Select Your Operator</option>
+                      <option value="airtel">AIRTEL</option>
+                      <option value="glo">GLO</option>
+                      <option value="mtn">MTN</option>
+                      <option value="9mobile">9 Mobile</option>
                     </select>
                   </div>
+                 <input type="hidden" class="form-control" data-bv-field="number" id="cardNumber" required placeholder="select a plan">
                   <div class="col-md-6 col-lg-4 form-group">
-                    <input type="text" class="form-control" data-bv-field="number" id="cardNumber" required placeholder="Enter Your Phone Number">
+                    <input type="text" class="form-control" data-bv-field="number" id="dataNumber" required placeholder="Enter Your Phone Number">
                   </div>
                   <div class="col-md-6 col-lg-3 form-group"> <a href="#" data-target="#view-plans" data-toggle="modal" class="view-plans-link">View Plans</a>
-                    <input class="form-control" id="DTHamount" placeholder="Enter Amount" required type="text">
+                    <input class="form-control" id="DTHamount" id="DTHamount" placeholder="Enter Amount" required type="text" disabled="yes">
                   </div>
                   <div class="col-md-6 col-lg-2 form-group">
                     <button class="btn btn-primary btn-block" type="submit">Continue</button>
