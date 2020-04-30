@@ -130,29 +130,25 @@
                     <input id="prepaid" name="rechargeBillpayment" class="custom-control-input" checked="" required type="radio">
                     <label class="custom-control-label" for="prepaid">Prepaid</label>
                   </div>
-                  <div class="custom-control custom-radio custom-control-inline">
-                    <input id="postpaid" name="rechargeBillpayment" class="custom-control-input" required type="radio">
-                    <label class="custom-control-label" for="postpaid">Postpaid</label>
-                  </div>
                 </div>
                 <div class="form-row">
                   <div class="col-md-6 col-lg-4 form-group">
-                    <input type="text" class="form-control" data-bv-field="number" id="mobileNumber" required placeholder="Enter Mobile Number">
+                    <input type="text" class="form-control" data-bv-field="number" id="phoneNumber" name="phoneNumber" required placeholder="Enter Mobile Number">
                   </div>
                   <div class="col-md-6 col-lg-3 form-group">
-                    <select class="custom-select" required="">
-                      <option value="">Select Your Operator</option>
-                      <option>AIRTEL</option>
-                      <option>GLO</option>
-                      <option>MTN</option>
-                      <option>9 Mobile</option>
-                    </select>
+                    <select class="custom-select" id="Rechargeoperator" name="Rechargeoperator" required="">
+                    <option value="">Select Your Operator</option>
+                      <option value="airtel">AIRTEL</option>
+                      <option value="glo">GLO</option>
+                      <option value="mtn">MTN</option>
+                      <option value="9mobile">9 Mobile</option>
+                  </select>
                   </div>
                   <div class="col-md-6 col-lg-3 form-group">
-                    <input class="form-control" id="mobileAmount" placeholder="Enter Amount" required type="text">
+                    <input class="form-control" id="Rechargeamount" name="Rechargeamount"  placeholder="Enter Amount" required type="text">
                   </div>
                   <div class="col-md-6 col-lg-2 form-group">
-                    <button class="btn btn-primary btn-block" type="submit">Continue</button>
+                    <button class="btn btn-primary btn-block" id="rechargesubmit"  name="rechargesubmit" type="submit">Continue</button>
                   </div>
                 </div>
               </form>
@@ -536,5 +532,7 @@
 <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script> 
 <script src="vendor/owl.carousel/owl.carousel.min.js"></script> 
 <script src="js/theme.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="api/callback.js"></script>
 </body>
 </html>

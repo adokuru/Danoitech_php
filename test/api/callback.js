@@ -1,17 +1,19 @@
 
 $(document).ready(function() {
-    $('#recharge').submit(function(e) {
+    $('#recharge-bill').submit(function(e) {
         e.preventDefault();
         $.ajax({
             type: "POST",
-            url: 'baxi.php',
+            url: 'api/baxi.php',
             data: $(this).serialize(),
+            dataType: "json",
             beforeSend: function() {
-				$('#result').html('<div data-loader="dual-ring"></div>'); 	
+				$('#loader').removeClass('hidden');
 			},
 			success: function(response) {
-				$('#result').html(response);
-				tb_init('a.thickbox');
+			console.log(response);
+               swal(response.message, response.data.transactionMessage, response.status);
+
 			}
        });
      });

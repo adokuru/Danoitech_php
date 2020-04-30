@@ -141,28 +141,29 @@
       <div class="bg-light shadow-md rounded p-4">
         <div class="row">
         
-          <!-- CableTv Recharge
+          <!-- Airtime Recharge
           ============================================= -->
+          <div id="loader" class="lds-dual-ring hidden overlay"></div>
           <div class="col-lg-4 mb-4 mb-lg-0">
             <h2 class="text-4 mb-3"> Recharge Your Line</h2>
-            <form id="cableTvRechargeBill" method="post">
+            <form id="recharge-bill" method="post">
               <div class="form-group">
-                  <select class="custom-select" id="operator" required="">
+                  <select class="custom-select" id="Rechargeoperator" name="Rechargeoperator" required="">
                     <option value="">Select Your Operator</option>
-                      <option>AIRTEL</option>
-                      <option>GLO</option>
-                      <option>MTN</option>
-                      <option>9 Mobile</option>
+                      <option value="airtel">AIRTEL</option>
+                      <option value="glo">GLO</option>
+                      <option value="mtn">MTN</option>
+                      <option value="9mobile">9 Mobile</option>
                   </select>
                 </div>
               <div class="form-group">
-                <input type="text" class="form-control" data-bv-field="number" id="accountNumber" required placeholder="Enter Phone Number">
+                <input type="text" class="form-control" data-bv-field="number" id="phoneNumber" name="phoneNumber" required placeholder="Enter Phone Number">
               </div>
               <div class="form-group input-group">
                 <div class="input-group-prepend"> <span class="input-group-text">&#8358;</span> </div>
-                <input class="form-control" id="amount" placeholder="Enter Amount" required type="text">
+                <input class="form-control" id="Rechargeamount" name="Rechargeamount" placeholder="Enter Amount" required type="text">
               </div>
-              <button class="btn btn-primary btn-block" type="submit">Continue</button>
+              <button class="btn btn-primary btn-block" id="rechargesubmit" name="rechargesubmit" type="submit">Continue</button>
             </form>
           </div><!-- CableTv Recharge end -->
           
@@ -397,5 +398,7 @@
 <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script> 
 <script src="vendor/owl.carousel/owl.carousel.min.js"></script> 
 <script src="js/theme.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="api/callback.js"></script>
 </body>
 </html>
