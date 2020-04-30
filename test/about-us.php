@@ -8,7 +8,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
 <link href="images/favicon.png" rel="icon" />
-<title>SmartBox - Recharge & Bill Payment</title>
+<title>SmartVox - Recharge & Bill Payment</title>
 <meta name="description" content="Chargepay - Recharge & Bill Payment Gateway">
 <meta name="author" content="danoitech.com">
 
@@ -43,7 +43,7 @@
           
           <!-- Logo
           ============================================= -->
-          <div class="logo"> <a href="index.php" title="SmartBox"><h2 style="color: white">SmartBox</h2></a> </div>
+          <div class="logo"> <a href="index.php" title="SmartVox"><h2 style="color: white">SmartVox</h2></a> </div>
           <!-- Logo end --> 
           
         </div>
@@ -77,12 +77,13 @@
                 <?php
                   if (isset($_SESSION['userEmail'])) {
                     echo '
-                      <li class="dropdown login-signup ml-lg-2">
-                        <a class="pl-lg-4 pr-0"  href="profile.php" title="Profile Page">
+                      <li class="dropdown active login-signup ml-lg-2">
+                        <a class="dropdown-toggle pl-lg-4 pr-0" href="#">
                           My Account<span class="d-none d-lg-inline-block">
                           <i class="fas fa-user"></i></span>
                         </a>
                         <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="profile.php">Dashboard</a></li>
                           <li><a class="dropdown-item" href="orders.php">Transactions</a></li>
                           <li><a class="dropdown-item " href="logout.php">Logout</a></li>
                         </ul>
@@ -136,7 +137,7 @@
   <div id="content">
     <div class="container">
       <div class="bg-light shadow-md rounded p-4">
-        <h2 class="text-6">What is Quickai?</h2>
+        <h2 class="text-6">What is SmartVox?</h2>
         <p>Instant Online recharge and Bill Payments Iisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure. Mutat tacimates id sit. Ridens mediocritatem ius an, eu nec <a href="">magna imperdiet</a>. Mediocrem qualisque in has. Enim utroque perfecto id mei, ad eam tritani labores facilisis, ullum sensibus no cum. Eius eleifend in quo. At mei alia iriure propriae.</p>
         <p>Partiendo voluptatibus ex cum, sed erat fuisset ne, cum ex meis volumus mentitum. Alienum pertinacia maiestatis ne eum, verear persequeris et vim. Mea cu dicit voluptua efficiantur, nullam labitur veritus sit cu. Eum denique omittantur te, in justo epicurei his, eu mei aeque populo. Cu pro facer sententiae, ne brute graece scripta duo. No placerat quaerendum nec, pri alia <a href="">ceteros adipiscing</a> ut. Quo in nobis nostrum intellegebat. Ius hinc decore erroribus eu, in case prima exerci pri. Id eum prima adipisci. Ius cu minim theophrastus, legendos pertinacia an nam.</p>
         <div class="row mt-4 mb-2">
@@ -162,7 +163,7 @@
             </div>
           </div>
         </div>
-        <h2 class="text-6 mb-3">Leadership</h2>
+        <!-- <h2 class="text-6 mb-3">Leadership</h2>
         <div class="row">
           <div class="col-sm-6 col-md-3">
             <div class="team"> <img class="img-fluid rounded" alt="" src="images/team/leader.jpg">
@@ -208,7 +209,7 @@
               </ul>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
     

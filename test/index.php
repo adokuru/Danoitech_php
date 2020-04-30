@@ -8,7 +8,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
 <link href="images/favicon.png" rel="icon" />
-<title>SmartBox - Recharge & Bill Payment</title>
+<title>SmartVox - Recharge & Bill Payment</title>
 <meta name="description" content="Chargepay - Recharge & Bill Payment Gateway">
 <meta name="author" content="danoitech.com">
 
@@ -43,7 +43,7 @@
           
           <!-- Logo
           ============================================= -->
-          <div class="logo"> <a href="index.php" title="RechargeNow"><h2 style="color: white">SmartBox</h2></a> </div>
+          <div class="logo"> <a href="index.php" title="SmartVox"><h2 style="color: white">SmartVox</h2></a> </div>
           <!-- Logo end --> 
           
         </div>
@@ -76,13 +76,14 @@
                 <?php
                   if (isset($_SESSION['userEmail'])) {
                     echo '
-                      <li class="dropdown login-signup ml-lg-2">
-                        <a class="pl-lg-4 pr-0"  href="profile.php" title="Profile Page">
+                      <li class="dropdown active login-signup ml-lg-2">
+                        <a class="dropdown-toggle pl-lg-4 pr-0" href="#">
                           My Account<span class="d-none d-lg-inline-block">
                           <i class="fas fa-user"></i></span>
                         </a>
                         <ul class="dropdown-menu">
-                          <li><a class="dropdown-item " href="orders.php">Transactions</a></li>
+                          <li><a class="dropdown-item" href="profile.php">Dashboard</a></li>
+                          <li><a class="dropdown-item" href="orders.php">Transactions</a></li>
                           <li><a class="dropdown-item " href="logout.php">Logout</a></li>
                         </ul>
                       </li>
@@ -119,6 +120,7 @@
             <li class="nav-item"> <a class="nav-link active" id="first-tab" data-toggle="tab" href="#first" role="tab" aria-controls="first" aria-selected="true">Airtime </a> </li>
             <li class="nav-item"> <a class="nav-link" id="second-tab" data-toggle="tab" href="#second" role="tab" aria-controls="second" aria-selected="false">Data</a> </li>
             <li class="nav-item"> <a class="nav-link" id="third-tab" data-toggle="tab" href="#third" role="tab" aria-controls="seventh" aria-selected="false">Electricity</a> </li>
+            <li class="nav-item"> <a class="nav-link" id="forth-tab" data-toggle="tab" href="#forth" role="tab" aria-controls="forth" aria-selected="false">Cables</a> </li>
           </ul>
           <div class="tab-content bg-light shadow-md rounded rounded-top-0 px-4 pt-4 pb-2" id="myTabContent">
             <div class="tab-pane fade show active" id="first" role="tabpanel" aria-labelledby="first-tab">
@@ -210,6 +212,34 @@
                 </div>
               </form>
             </div>
+
+            <div class="tab-pane fade" id="forth" role="tabpanel" aria-labelledby="forth-tab">
+              <form id="cableBill" method="post">
+                <div class="form-row">
+                  <div class="col-md-6 col-lg-3 form-group">
+                    <select class="custom-select" required="">
+                      <option value="">Select Your Operator</option>
+                      <option>1st Operator</option>
+                      <option>2nd Operator</option>
+                      <option>3rd Operator</option>
+                      <option>4th Operator</option>
+                      <option>5th Operator</option>
+                      <option>6th Operator</option>
+                      <option>7th Operator</option>
+                    </select>
+                  </div>
+                  <div class="col-md-6 col-lg-4 form-group">
+                    <input type="text" class="form-control" data-bv-field="number" id="serviceNumber" required placeholder="Enter Account Number">
+                  </div>
+                  <div class="col-md-6 col-lg-3 form-group">
+                    <input class="form-control" id="cableamount" placeholder="Enter Amount" required type="text">
+                  </div>
+                  <div class="col-md-6 col-lg-2 form-group">
+                    <button class="btn btn-primary btn-block" type="submit">Continue</button>
+                  </div>
+                </div>
+              </form>
+            </div>
             
           </div><!-- Tabs End -->
         
@@ -244,13 +274,6 @@
                   <div class="featured-box-icon border text-primary rounded-circle"> <i class="fas fa-rocket"></i> </div>
                   <h3>Fast</h3>
                   <p>Get your recharge to family and friends in minutes</p>
-                </div>
-              </div>
-              <div class="col-sm-6">
-                <div class="featured-box mb-5 style-3">
-                  <div class="featured-box-icon border text-primary rounded-circle"> <i class="fas fa-file-alt"></i> </div>
-                  <h3>Simple</h3>
-                  <p>You get U+204620. You can use these credits to take recharge.</p>
                 </div>
               </div>
               <div class="col-sm-6">

@@ -15,7 +15,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
 <link href="images/favicon.png" rel="icon" />
-<title>SmartBox - Recharge & Bill Payment</title>
+<title>SmartVox - Recharge & Bill Payment</title>
 <meta name="description" content="Chargepay - Recharge & Bill Payment Gateway">
 <meta name="author" content="danoitech.com">
 
@@ -50,7 +50,7 @@
           
           <!-- Logo
           ============================================= -->
-          <div class="logo"> <a href="index.php" title="SmartBox"><h2 style="color: white">SmartBox</h2></a> </div>
+          <div class="logo"> <a href="index.php" title="SmartVox"><h2 style="color: white">SmartVox</h2></a> </div>
           <!-- Logo end --> 
           
         </div>
@@ -83,12 +83,13 @@
                 <?php
                   if (isset($_SESSION['userEmail'])) {
                     echo '
-                      <li class="dropdown login-signup ml-lg-2 active">
-                        <a class="pl-lg-4 pr-0"  href="profile.php" title="Profile Page">
+                      <li class="dropdown active login-signup ml-lg-2">
+                        <a class="dropdown-toggle pl-lg-4 pr-0" href="#">
                           My Account<span class="d-none d-lg-inline-block">
                           <i class="fas fa-user"></i></span>
                         </a>
                         <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="profile.php">Dashboard</a></li>
                           <li><a class="dropdown-item" href="orders.php">Transactions</a></li>
                           <li><a class="dropdown-item " href="logout.php">Logout</a></li>
                         </ul>

@@ -11,7 +11,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
 <link href="images/favicon.png" rel="icon" />
-<title>SmartBox - Recharge & Bill Payment</title>
+<title>SmartVox - Recharge & Bill Payment</title>
 <meta name="description" content="Chargepay - Recharge & Bill Payment Gateway">
 <meta name="author" content="danoitech.com">
 
@@ -46,7 +46,7 @@
           
           <!-- Logo
           ============================================= -->
-          <div class="logo"> <a href="index.php" title="SmartBox"><h2 style="color: white">SmartBox</h2></a> </div>
+          <div class="logo"> <a href="index.php" title="SmartVox"><h2 style="color: white">SmartVox</h2></a> </div>
           <!-- Logo end --> 
           
         </div>

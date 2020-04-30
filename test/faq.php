@@ -74,12 +74,13 @@
                 <?php
                   if (isset($_SESSION['userEmail'])) {
                     echo '
-                      <li class="dropdown login-signup ml-lg-2">
-                        <a class="pl-lg-4 pr-0"  href="profile.php" title="Profile Page">
+                      <li class="dropdown active login-signup ml-lg-2">
+                        <a class="dropdown-toggle pl-lg-4 pr-0" href="#">
                           My Account<span class="d-none d-lg-inline-block">
                           <i class="fas fa-user"></i></span>
                         </a>
                         <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="profile.php">Dashboard</a></li>
                           <li><a class="dropdown-item" href="orders.php">Transactions</a></li>
                           <li><a class="dropdown-item " href="logout.php">Logout</a></li>
                         </ul>
@@ -174,49 +175,6 @@
               <div class="card-body"> Iisque Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. </div>
             </div>
           </div>
-        </div>
-            </div>
-        
-        </div>
-        <hr>
-        <div class="row">
-        	<div class="col-md-3">
-            <h3 class="text-5 font-weight-400">Booking</h3>
-            </div>
-            <div class="col-md-9">
-            <div class="accordion accordion-alternate" id="accordionBooking">
-          <div class="card">
-            <div class="card-header" id="heading5">
-              <h5 class="mb-0"> <a href="#" class="collapsed" data-toggle="collapse" data-target="#faq5" aria-expanded="false" aria-controls="faq5">How can i cancel my booking?</a> </h5>
-            </div>
-            <div id="faq5" class="collapse" aria-labelledby="heading5" data-parent="#accordionBooking">
-              <div class="card-body"> Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure. Mutat tacimates id sit. Ridens mediocritatem ius an, eu nec magna imperdiet. </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-header" id="heading6">
-              <h5 class="mb-0"> <a href="#" class="collapsed" data-toggle="collapse" data-target="#faq6" aria-expanded="false" aria-controls="faq6">How do I print my e-ticket? </a> </h5>
-            </div>
-            <div id="faq6" class="collapse" aria-labelledby="heading6" data-parent="#accordionBooking">
-              <div class="card-body"> Iisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure. Mutat tacimates id sit. Ridens mediocritatem ius an, eu nec magna imperdiet.</div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-header" id="heading7">
-              <h5 class="mb-0"> <a href="#" class="collapsed" data-toggle="collapse" data-target="#faq7" aria-controls="faq7">Do I need an ID Proof while booking a train ticket?</a> </h5>
-            </div>
-            <div id="faq7" class="collapse" aria-labelledby="heading7" data-parent="#accordionBooking">
-              <div class="card-body"> Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-header" id="heading8">
-              <h5 class="mb-0"> <a href="#" class="collapsed" data-toggle="collapse" data-target="#faq8" aria-expanded="false" aria-controls="faq8"> Why are seats priced differently on the same bus?</a> </h5>
-            </div>
-            <div id="faq8" class="collapse" aria-labelledby="heading8" data-parent="#accordionBooking">
-              <div class="card-body"> Iisque Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. </div>
-            </div>
-          </div>          
         </div>
             </div>
         

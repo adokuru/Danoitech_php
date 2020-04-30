@@ -74,7 +74,7 @@
           <li class="nav-item"> <a class="nav-link" href="terms.php">Terms of Use</a> </li>
           <li class="nav-item"> <a class="nav-link" href="privacy.php">Privacy Policy</a> </li>
         </ul>
-        <p class="copyright-text">Copyright © <?php echo date('Y'); ?> <a href="#">SmartBox</a>. All Rights Reserved.</p>
+        <p class="copyright-text">Copyright © <?php echo date('Y'); ?> <a href="#">SmartVox</a>. All Rights Reserved.</p>
       </div>
     </div>
   </footer>
