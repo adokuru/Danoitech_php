@@ -7,7 +7,7 @@ $(document).ready(function(){
 			data: 'search=' + searchVal,
 			dataType: 'html',
 			beforeSend: function() {
-				$('#result').html('<img src="loading.gif" alt="loading..." />');
+				$('#result').html('<div data-loader="dual-ring"></div>');
 				if(!searchVal[0]) {
 					$('#result').html('<p>Please enter a keyword as search value.</p>');   	
 					return false;
