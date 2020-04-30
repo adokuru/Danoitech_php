@@ -35,8 +35,6 @@ curl_close($curl);
 $json = $result;
 $data = json_decode($json);
 
-echo $response . PHP_EOL;
-
 
 ?>
 
