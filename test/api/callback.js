@@ -1,22 +1,18 @@
-$(document).ready(function(){
-	$('#searchBtn').click(function() { 
-		var searchVal = $('#search').val();
-		$.ajax({
-			type: 'GET',
-			url: 'getFlickr.php',
-			data: 'search=' + searchVal,
-			dataType: 'html',
-			beforeSend: function() {
-				$('#result').html('<div data-loader="dual-ring"></div>');
-				if(!searchVal[0]) {
-					$('#result').html('<p>Please enter a keyword as search value.</p>');   	
-					return false;
-				} 	
+
+$(document).ready(function() {
+    $('#recharge').submit(function(e) {
+        e.preventDefault();
+        $.ajax({
+            type: "POST",
+            url: 'baxi.php',
+            data: $(this).serialize(),
+            beforeSend: function() {
+				$('#result').html('<div data-loader="dual-ring"></div>'); 	
 			},
 			success: function(response) {
 				$('#result').html(response);
 				tb_init('a.thickbox');
 			}
-		});
-	});
+       });
+     });
 });
