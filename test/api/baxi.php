@@ -26,6 +26,7 @@ $result = curl_exec($curl);
 if (curl_errno($curl)) {
     echo 'Error:' . curl_error($curl);
 }
+return $result;
 curl_close($curl);
 
 echo $response . PHP_EOL;
