@@ -395,6 +395,13 @@
 <!-- Modal Dialog - View Plans end --> 
 
 <!-- Script --> 
+ <script type="text/javascript">
+      $body = $("body");
+      $(document).on({
+            ajaxStart: function() { $body.addClass("loading");    },
+             ajaxStop: function() { $body.removeClass("loading"); }    
+        });
+  </script>
 <script src="vendor/jquery/jquery.min.js"></script> 
 <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script> 
 <script src="vendor/owl.carousel/owl.carousel.min.js"></script> 
