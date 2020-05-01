@@ -7,9 +7,6 @@ $(document).ready(function() {
             url: 'api/baxi.php',
             data: $(this).serialize(),
             dataType: "json",
-            beforeSend: function() {
-				$('#loader').removeClass('hidden');
-			},
 			success: function(response) {
 			console.log(response);
                swal(response.message, response.data.transactionMessage, response.status);
@@ -24,12 +21,14 @@ $(document).ready(function() {
             url: 'api/baxi.php',
             data: dataoperator,
             dataType: "json",
-            beforeSend: function() {
-                $('#loader').removeClass('hidden');
-            },
             success: function(response) {
             console.log(response);
             }
     });
 });
+     $body = $("body");
+      $(document).on({
+            ajaxStart: function() { $body.addClass("loading");    },
+             ajaxStop: function() { $body.removeClass("loading"); }    
+        });
 });

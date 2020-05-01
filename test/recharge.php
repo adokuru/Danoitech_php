@@ -22,6 +22,8 @@
 <link rel="stylesheet" type="text/css" href="vendor/owl.carousel/assets/owl.carousel.min.css" />
 <link rel="stylesheet" type="text/css" href="vendor/owl.carousel/assets/owl.theme.default.min.css" />
 <link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
+<link rel="stylesheet" type="text/css" href="css/custom.css" />
+
 
 </head>
 <body>
@@ -340,7 +342,7 @@
     
   </div>
   <!-- Content end --> 
-  
+  <div class="modal"><!-- Place at bottom of page --></div>
   <!-- Footer
   ============================================= -->
   <?php include 'inc/footer.php'; ?>

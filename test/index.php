@@ -24,6 +24,7 @@
 <link rel="stylesheet" type="text/css" href="vendor/owl.carousel/assets/owl.carousel.min.css" />
 <link rel="stylesheet" type="text/css" href="vendor/owl.carousel/assets/owl.theme.default.min.css" />
 <link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
+<link rel="stylesheet" type="text/css" href="css/custom.css" />
 
 </head>
 <body>
@@ -485,7 +486,7 @@
   
 </div>
 <!-- Document Wrapper end --> 
-
+<div class="modal"><!-- Place at bottom of page --></div>
 <!-- Back to Top
 ============================================= --> 
 <a id="back-to-top" data-toggle="tooltip" title="Back to Top" href="javascript:void(0)"><i class="fa fa-chevron-up"></i></a> 
