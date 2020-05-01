@@ -145,7 +145,6 @@
         
           <!-- Airtime Recharge
           ============================================= -->
-          <div id="loader" class="lds-dual-ring hidden overlay"></div>
           <div class="col-lg-4 mb-4 mb-lg-0">
             <h2 class="text-4 mb-3"> Recharge Your Line</h2>
             <form id="recharge-bill" method="post">

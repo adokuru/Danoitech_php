@@ -110,7 +110,6 @@
   
   <!-- Content
   ============================================= -->
-    <div id="loader" class="lds-dual-ring hidden overlay"></div>
   <div id="content">
     <div class="hero-wrap py-2 py-md-3 py-lg-4">
       <div class="hero-mask opacity-3 bg-dark"></div>
