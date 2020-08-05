@@ -5,6 +5,7 @@ const { registerRoute } = workbox.routing;
 const { CacheFirst } = workbox.strategies;
 const { CacheableResponse } = workbox.cacheableResponse;
 const { precacheAndRoute } = workbox.precaching;
+const {StaleWhileRevalidate} = workbox.strategies;
 
 precacheAndRoute([
 	{
@@ -760,7 +761,7 @@ precacheAndRoute([
 
 registerRoute(
 	/\.(?:png|jpg|jpeg|svg|gif)$/,
-	new CacheFirst({
+	new StaleWhileRevalidate({
 		cacheName: "images-cache",
 		plugins: [
 			new workbox.expiration.Plugin({
