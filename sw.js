@@ -761,7 +761,7 @@ precacheAndRoute([
 registerRoute(
 	/\.(?:png|jpg|jpeg|svg|gif)$/,
 	new NetworkFirst({
-		cacheName: "images-cache",
+		cacheName: "images-cacheV2",
 		plugins: [
 			new workbox.expiration.Plugin({
 				maxEntries: 50,
@@ -773,7 +773,7 @@ registerRoute(
 registerRoute(
 	/\.(?:css|js|html|php|xml)$/,
 	new NetworkFirst({
-		cacheName: "assets-cache",
+		cacheName: "assets-cacheV2",
 		plugins: [
 			new workbox.expiration.Plugin({
 				maxEntries: 50,
@@ -784,7 +784,7 @@ registerRoute(
 );
 
 const postHandler = new NetworkFirst({
-	cacheName: "webassets-cache",
+	cacheName: "webassets-cacheV2",
 	plugins: [
 		new workbox.expiration.Plugin({
 			maxEntries: 50,
