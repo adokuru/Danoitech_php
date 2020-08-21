@@ -786,7 +786,7 @@ registerRoute(
 	})
 );
 
-const postHandler = new CacheFirst({
+const postHandler = new NetworkFirst({
 	cacheName: "webassets-cache",
 	plugins: [
 		new workbox.expiration.Plugin({
