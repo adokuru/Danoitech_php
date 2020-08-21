@@ -6,6 +6,8 @@ const { CacheFirst } = workbox.strategies;
 const { CacheableResponse } = workbox.cacheableResponse;
 const { precacheAndRoute } = workbox.precaching;
 const {StaleWhileRevalidate} = workbox.strategies;
+const {NetworkFirst} = workbox.strategies;
+
 
 precacheAndRoute([
 	{
@@ -761,24 +763,24 @@ precacheAndRoute([
 
 registerRoute(
 	/\.(?:png|jpg|jpeg|svg|gif)$/,
-	new StaleWhileRevalidate({
+	new NetworkFirst({
 		cacheName: "images-cache",
 		plugins: [
 			new workbox.expiration.Plugin({
 				maxEntries: 50,
-				maxAgeSeconds: 30 * 24 * 60 * 60 // 30 Days
+				maxAgeSeconds: 10 * 24 * 60 * 60 // 10 Days
 			})
 		]
 	})
 );
 registerRoute(
 	/\.(?:css|js|html|php|xml)$/,
-	new CacheFirst({
+	new NetworkFirst({
 		cacheName: "assets-cache",
 		plugins: [
 			new workbox.expiration.Plugin({
 				maxEntries: 50,
-				maxAgeSeconds: 30 * 24 * 60 * 60 // 30 Days
+				maxAgeSeconds: 10 * 24 * 60 * 60 // 10 Days
 			})
 		]
 	})
