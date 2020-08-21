@@ -10,10 +10,7 @@ const {NetworkFirst} = workbox.strategies;
 
 
 precacheAndRoute([
-	{
-		revision: "bc2756d1edcfb542ecb28dc1a7792ff9",
-		url: "/index.html"
-	},
+
 	{
 		revision: "bc1756d1edcfb542ecb28dc1a7792ff8",
 		url: "/offline.html"
