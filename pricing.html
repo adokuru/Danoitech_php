@@ -141,6 +141,10 @@
                                             
                                         </li>
                                         
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="pricing.html">Price</a>
+                                            
+                                        </li>
                                        
                                         <li class="nav-item">
                                             <a class="nav-link" href="contact.html">Contact</a>
@@ -192,21 +196,19 @@
 
     <!-- ====== MODAL POPUP ====== -->
 
-<div class="modal" tabindex="-1" role="dialog" id="pricemodal">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content" style="background-color: #c0c0c0">
-      <div class="modal-header">
-        <h5 class="modal-title">DANOI TECH</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <p>Thank You For Selecting a Price Plan.</p>
-      </div>
-    </div>
-  </div>
-</div>
+        <div id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" class="modal fade text-left">
+                        <div role="document" class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h4 id="exampleModalLabel" class="modal-title"></h4>
+                            </div>
+                            <h3 style="font-weight: bol"> Thank you for choosing a Plan</h3>
+                            <div class="modal-footer">
+                              <button type="button" data-dismiss="modal" class="main-btn main-btn-1">Close</button>
+                            </div>
+                          </div>
+                        </div>
+        </div>
 
 
     <!--====== MODAL END ======-->
@@ -248,7 +250,8 @@
                                 <div class="col-lg-4 col-md-7 col-sm-9">
                                     <div class="pricing-item white-bg mt-30 text-center" style="background-color: #cd7f32;">
                                         <h3 class="title">Bronze Plan</h3><br>
-                                        <a class="main-btn main-btn-2" value="submit" href="contact.html" data-toggle="modal" data-target="#pricemodal">Choose Plan</a>
+                                        <!-- <a class="main-btn main-btn-2" value="submit" href="contact.html" data-toggle="modal" data-target="#mymodal">Choose Plan</a> -->
+                                        <button type="button" data-toggle="modal" data-target="#myModal" class="main-btn main-btn-2">Choose Plan </button>
                                         <ul>
                                             <li>1-4 Page Website</li>
                                             <li>Mobile Responsive Design</li>
@@ -506,6 +509,114 @@
     </section> 
 
     <!--====== SERVICES PRICING PART 3 END =====-->
+
+    <!--====== SERVICES PRICING PART 4 START ======-->
+   
+    <section class="services-pricing-area priceing-page">
+       <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="section-title text-center">
+                        <h1 class="title">Mobile Apps Packages</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row no-gutters justify-content-center">
+                <!-- <div class="col-lg-3 col-md-7 col-sm-9">
+                    <div class="pricing-tab white-bg mt-30">
+                        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Monthly</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Yearly</a>
+                            </li>
+                        </ul>
+                        <p>We provide 20% off for all IT Tech & other relative services. Hurry up to meet with us &  get your solutions.</p>
+                        <img src="assets/images/pricing-boost.png" alt="pricing">
+                    </div>
+                </div> -->
+                <div class="col-lg-12">
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                            <div class="row no-gutters justify-content-center">
+                                <div class="col-lg-4 col-md-7 col-sm-9">
+                                    <div class="pricing-item white-bg mt-30 text-center" style="background-color: #a9a9a9">
+                                        <h3 class="title">Native Mobile App</h3>
+                                        <br>
+                                        <a class="main-btn main-btn-2" href="#">Choose Plan</a>
+                                        <ul>
+                                            <li>One Time Fee</li>
+                                            <li>Andriod & IOS App</li>
+                                            <li>Interactive User End Experice</li>
+                                            <li>Excellent Friendly Interface</li>
+                                            <li>Live Database Sync</li>
+                                            <li>Categories</li>
+                                            <li>Web Page (Optional)</li>
+                                            <li>Product Catalog</li>
+                                            <li>Shopping Cart</li>
+                                            <li>Shipping Method</li>
+                                            <li>Payment Method</li>
+                                        </ul>
+                                        <span><span>₦</span> 350,000</span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-7 col-sm-9">
+                                    <div class="pricing-item white-bg mt-30 text-center" style="background-color: #c0c0c0;">
+                                        <h3 class="title">Corporate Mobile App</h3>
+                                        <br>
+                                        <a class="main-btn main-btn-2" href="#">Choose Plan</a>
+                                        <ul>
+                                            <li>One Time Fee</li>
+                                            <li>Andriod & IOS App</li>
+                                            <li>Interactive User End Experice</li>
+                                            <li>Excellent Friendly Interface</li>
+                                            <li>Live Database Sync</li>
+                                            <li>Categories</li>
+                                            <li>Web Page (Optional)</li>
+                                            <li>Product Catalog</li>
+                                            <li>Departments</li>
+                                            <li>Discussions</li>
+                                            <li>Recent Activities</li>
+                                            <li>Shipping Method</li>
+                                            <li>Payment Method</li>
+                                        </ul>
+                                        <span><span>₦</span> 350,000</span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-7 col-sm-9">
+                                    <div class="pricing-item white-bg mt-30 text-center" style="background-color: #e5e4e2">
+                                        <h3 class="title">Premium Mobile App</h3>
+                                        <br>
+                                        <a class="main-btn main-btn-2" href="#">Choose Plan</a>
+                                        <ul>
+                                            <li>One Time Fee</li>
+                                            <li>Andriod & IOS App</li>
+                                            <li>Interactive User End Experice</li>
+                                            <li>Excellent Friendly Interface</li>
+                                            <li>Live Database Sync</li>
+                                            <li>Categories</li>
+                                            <li>Web Page (Optional)</li>
+                                            <li>Product Catalog</li>
+                                            <li>Pincode check</li>
+                                            <li>Discussions</li>
+                                            <li>Shopping Cart</li>
+                                            <li>Recent Activities</li>
+                                            <li>Shipping Method</li>
+                                            <li>Payment Method</li>
+                                        </ul>
+                                        <span><span>₦</span> 400,000</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+
+    <!--====== SERVICES PRICING PART 4 ENDS ======-->
 
 
 
